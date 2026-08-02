@@ -23,9 +23,10 @@
   --color-ink-soft: #a8b2c9;
   --color-ink-mute: #6c7796;
 
-  --font-display: 'Rajdhani', 'Chakra Petch', ui-sans-serif, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', 'Menlo', monospace;
-  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  /* Alimentadas por la API de fuentes de Astro (auto-hospedadas en build) */
+  --font-display: var(--font-display-src), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-src), ui-monospace, 'SFMono-Regular', monospace;
+  --font-sans: var(--font-sans-src), ui-sans-serif, system-ui, -apple-system, sans-serif;
 
   --radius-panel: 2px;
 }

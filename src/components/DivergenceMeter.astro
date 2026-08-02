@@ -1,0 +1,84 @@
+---
+/** Medidor de divergencia: reproduce los tubos nixie del aparato de Suzuha. */
+interface Props {
+  value?: string;
+  label?: string;
+  class?: string;
+  size?: 'sm' | 'lg';
+}
+
+const { value = '1.048596', label, class: className = '', size = 'lg' } = Astro.props;
+
+// Cada caracter ocupa su propio tubo; el punto decimal va en un tubo estrecho.
+const glyphs = value.split('');
+
+const tube =
+  size === 'lg'
+    ? 'h-14 w-9 text-[26px] sm:h-16 sm:w-11 sm:text-[32px]'
+    : 'h-9 w-6 text-[17px]';
+const dot = size === 'lg' ? 'h-14 w-3.5 sm:h-16 sm:w-4' : 'h-9 w-2.5';
+---
+
+<div class:list={['inline-flex flex-col gap-2', className]}>
+  {label && <span class="eyebrow">{label}</span>}
+  <div
+    class="inline-flex items-stretch gap-1 border border-line bg-[#08090f] p-2 shadow-[inset_0_0_28px_rgba(0,0,0,0.9)]"
+    role="img"
+    aria-label={`Valor de divergencia: ${value} por ciento`}
+  >
+    {
+      glyphs.map((glyph) =>
+        glyph === '.' ? (
+          <span
+            class:list={[
+              'grid place-items-end justify-center rounded-[1px] bg-gradient-to-b from-[#12141d] to-[#0a0b12] pb-2',
+              dot,
+            ]}
+            aria-hidden="true"
+          >
+            <span class="block h-1.5 w-1.5 rounded-full bg-nixie shadow-[0_0_8px_#ff9d2f]" />
+          </span>
+        ) : (
+          <span
+            class:list={[
+              'nixie-glyph grid place-items-center rounded-[1px] bg-gradient-to-b from-[#12141d] to-[#0a0b12] font-mono font-bold text-nixie',
+              tube,
+            ]}
+            aria-hidden="true"
+          >
+            {glyph}
+          </span>
+        ),
+      )
+    }
+    <span class="ml-1 grid place-items-center font-mono text-sm text-nixie-dim" aria-hidden="true">%</span>
+  </div>
+</div>
+
+<style>
+  .nixie-glyph {
+    text-shadow:
+      0 0 6px rgba(255, 157, 47, 0.9),
+      0 0 18px rgba(255, 157, 47, 0.55),
+      0 0 40px rgba(255, 157, 47, 0.25);
+    animation: nixie-flicker 5.5s infinite steps(1);
+  }
+
+  /* Parpadeo irregular, como el de un tubo real */
+  @keyframes nixie-flicker {
+    0%,
+    38%,
+    41%,
+    72%,
+    74%,
+    100% {
+      opacity: 1;
+    }
+    39% {
+      opacity: 0.72;
+    }
+    73% {
+      opacity: 0.85;
+    }
+  }
+</style>

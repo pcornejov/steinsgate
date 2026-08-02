@@ -1,0 +1,76 @@
+---
+import { getProfile } from '../content/profiles';
+import { url } from '../lib/site';
+import type { Character } from '../lib/types';
+
+interface Props {
+  character: Character;
+}
+
+const { character } = Astro.props;
+const profile = getProfile(character.id);
+const voiceActor = character.voiceActors[0];
+---
+
+<a
+  href={url(`/personajes/${character.slug}`)}
+  class="group relative flex flex-col overflow-hidden border border-line bg-panel transition-colors duration-300 hover:border-gel/55"
+>
+  <div class="relative aspect-[3/4] overflow-hidden bg-abyss">
+    {
+      character.image ? (
+        <img
+          src={url(character.image)}
+          alt={`Retrato de ${character.name.full}`}
+          width="380"
+          height="507"
+          loading="lazy"
+          decoding="async"
+          class="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.05]"
+        />
+      ) : (
+        <div class="grid h-full w-full place-items-center font-mono text-xs text-ink-mute">
+          sin retrato
+        </div>
+      )
+    }
+
+    <div
+      class="pointer-events-none absolute inset-0 bg-gradient-to-t from-void via-void/20 to-transparent opacity-90"
+    >
+    </div>
+
+    {
+      character.role === 'MAIN' && (
+        <span class="absolute top-2 left-2 border border-gel/40 bg-void/80 px-1.5 py-0.5 font-mono text-[10px] tracking-wider text-gel uppercase backdrop-blur-sm">
+          Principal
+        </span>
+      )
+    }
+  </div>
+
+  <div class="flex flex-1 flex-col gap-1 p-3">
+    <h3
+      class="font-display text-[15px] leading-tight font-semibold text-ink transition-colors group-hover:text-gel"
+    >
+      {character.name.full}
+    </h3>
+    {
+      character.name.native && (
+        <p class="font-mono text-[11px] text-ink-mute">{character.name.native}</p>
+      )
+    }
+    {
+      profile?.tagline && (
+        <p class="mt-1 line-clamp-2 text-[12.5px] leading-snug text-ink-soft">{profile.tagline}</p>
+      )
+    }
+    {
+      voiceActor && (
+        <p class="mt-auto pt-2 font-mono text-[10px] tracking-wide text-ink-mute uppercase">
+          CV · {voiceActor.name}
+        </p>
+      )
+    }
+  </div>
+</a>

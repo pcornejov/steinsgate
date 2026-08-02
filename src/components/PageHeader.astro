@@ -1,0 +1,22 @@
+---
+/** Cabecera estándar de las páginas de sección. */
+interface Props {
+  eyebrow?: string;
+  title: string;
+  lead?: string;
+  class?: string;
+}
+
+const { eyebrow, title, lead, class: className = '' } = Astro.props;
+---
+
+<header class:list={['border-b border-line/60 bg-abyss/40', className]}>
+  <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <h1 class="mt-3 font-display text-4xl leading-[1.05] font-bold text-ink sm:text-5xl">
+      {title}
+    </h1>
+    {lead && <p class="mt-4 max-w-2xl text-[15px] leading-relaxed text-ink-soft">{lead}</p>}
+    <slot />
+  </div>
+</header>

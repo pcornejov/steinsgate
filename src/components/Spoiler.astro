@@ -1,0 +1,39 @@
+---
+/**
+ * Oculta contenido sensible tras un velo que se retira al pulsar.
+ * Funciona sin JavaScript: es un <details> estilizado.
+ */
+interface Props {
+  label?: string;
+  class?: string;
+}
+
+const { label = 'Contiene spoilers', class: className = '' } = Astro.props;
+---
+
+<details class:list={['spoiler group', className]}>
+  <summary
+    class="flex cursor-pointer list-none items-center gap-2 border border-alert/35 bg-alert/8 px-3 py-2 font-mono text-[11px] tracking-[0.16em] text-alert uppercase transition-colors select-none hover:bg-alert/15"
+  >
+    <svg
+      class="h-3.5 w-3.5 shrink-0 transition-transform group-open:rotate-90"
+      viewBox="0 0 12 12"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path d="M4 2l5 4-5 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+    </svg>
+    <span>{label}</span>
+    <span class="ml-auto text-[10px] text-alert/60 group-open:hidden">Mostrar</span>
+    <span class="ml-auto hidden text-[10px] text-alert/60 group-open:inline">Ocultar</span>
+  </summary>
+  <div class="border border-t-0 border-alert/25 bg-alert/[0.03] px-3 py-3">
+    <slot />
+  </div>
+</details>
+
+<style>
+  .spoiler summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

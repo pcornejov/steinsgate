@@ -1,0 +1,40 @@
+---
+/**
+ * Renderiza texto plano separado por lineas en blanco como parrafos,
+ * respetando el enfasis ligero con *asteriscos*.
+ */
+interface Props {
+  text: string | null | undefined;
+  class?: string;
+  size?: 'sm' | 'base';
+}
+
+const { text, class: className = '', size = 'base' } = Astro.props;
+
+const paragraphs = (text ?? '')
+  .split(/\n{2,}/)
+  .map((block) => block.trim())
+  .filter(Boolean);
+
+/** Convierte *texto* en cursiva. Escapa el resto para no inyectar HTML. */
+function render(block: string): string {
+  const escaped = block
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/\n/g, '<br />');
+  return escaped.replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
+}
+
+const sizeClass = size === 'sm' ? 'text-[13.5px] leading-relaxed' : 'text-[15px] leading-[1.75]';
+---
+
+{
+  paragraphs.length > 0 && (
+    <div class:list={['space-y-4 text-ink-soft', sizeClass, className]}>
+      {paragraphs.map((block) => (
+        <p set:html={render(block)} />
+      ))}
+    </div>
+  )
+}

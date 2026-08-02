@@ -1,10 +1,281 @@
 ---
-import '../styles/global.css';
+import CharacterCard from '../components/CharacterCard.astro';
+import DivergenceMeter from '../components/DivergenceMeter.astro';
+import MediaCard from '../components/MediaCard.astro';
+import { glossary } from '../content/glossary';
+import { worldlines } from '../content/worldlines';
+import Base from '../layouts/Base.astro';
+import {
+  FLAGSHIP_ID,
+  anime,
+  characters,
+  formatDate,
+  getMedia,
+  meta,
+  truncate,
+} from '../lib/data';
+import { url } from '../lib/site';
+
+const flagship = getMedia(FLAGSHIP_ID)!;
+// Las seis animaciones más populares: cubre las dos series, la película y las OVAs.
+const featuredAnime = [...anime]
+  .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0))
+  .slice(0, 6);
+const mainCast = characters.filter((c) => c.role === 'MAIN').slice(0, 8);
+const featuredTerms = glossary
+  .filter((entry) => !entry.spoiler)
+  .filter((entry) => ['d-mail', 'reading-steiner', 'linea-de-mundo', 'campo-atractor'].includes(entry.slug));
+
+const stats = [
+  { value: meta.counts.anime, label: 'Obras animadas' },
+  { value: meta.counts.manga, label: 'Manga y novelas' },
+  { value: meta.counts.characters, label: 'Personajes' },
+  { value: meta.counts.episodes, label: 'Episodios' },
+];
 ---
 
-<html lang="es">
-  <head><meta charset="utf-8" /><title>Smoke test</title></head>
-  <body>
-    <h1 class="nixie-text text-4xl">El Psy Kongroo</h1>
-  </body>
-</html>
+<Base bare image={flagship.banner ?? flagship.cover}>
+  {/* ─────────────  Héroe  ───────────── */}
+  <section class="relative overflow-hidden border-b border-line/60">
+    {
+      flagship.banner && (
+        <div class="absolute inset-0" aria-hidden="true">
+          <img
+            src={url(flagship.banner)}
+            alt=""
+            class="h-full w-full object-cover opacity-25"
+            fetchpriority="high"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-void via-void/85 to-void/55" />
+          <div class="absolute inset-0 bg-gradient-to-r from-void via-transparent to-void/70" />
+        </div>
+      )
+    }
+
+    <div class="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:py-32">
+      <p class="eyebrow">Future Gadget Laboratory · Archivo nº 001</p>
+
+      <h1 class="mt-4 max-w-3xl font-display text-5xl leading-[0.98] font-bold sm:text-6xl lg:text-7xl">
+        La enciclopedia de<br />
+        <span class="nixie-text">Steins;Gate</span>
+      </h1>
+
+      <p class="mt-6 max-w-xl text-base leading-relaxed text-ink-soft sm:text-lg">
+        Un microondas conectado a un móvil envía mensajes al pasado. Lo que empieza como
+        una broma en un piso de Akihabara termina siendo el problema de cómo salvar a
+        alguien cuando el universo ha decidido que no se puede.
+      </p>
+
+      <div class="mt-9 flex flex-wrap items-center gap-3">
+        <a
+          href={url('/obras')}
+          class="clip-hud bg-nixie px-6 py-3 font-display text-sm font-bold tracking-wide text-void uppercase transition-colors hover:bg-nixie-glow"
+        >
+          Explorar las obras
+        </a>
+        <a
+          href={url('/personajes')}
+          class="clip-hud border border-gel/45 px-6 py-3 font-display text-sm font-bold tracking-wide text-gel uppercase transition-colors hover:bg-gel/10"
+        >
+          Ver personajes
+        </a>
+      </div>
+
+      <div class="mt-14">
+        <DivergenceMeter value="1.048596" label="Línea de mundo objetivo" />
+      </div>
+    </div>
+  </section>
+
+  {/* ─────────────  Cifras del archivo  ───────────── */}
+  <section class="border-b border-line/60 bg-abyss/50">
+    <div class="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-y divide-line/50 sm:grid-cols-4 sm:divide-y-0">
+      {
+        stats.map((stat) => (
+          <div class="px-4 py-6 text-center sm:px-6 sm:py-8">
+            <p class="nixie-text font-mono text-3xl font-bold sm:text-4xl">{stat.value}</p>
+            <p class="mt-1.5 font-mono text-[10px] tracking-[0.18em] text-ink-mute uppercase">
+              {stat.label}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  {/* ─────────────  La obra fundacional  ───────────── */}
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+    <div class="grid gap-10 lg:grid-cols-[300px_1fr] lg:gap-14">
+      <div>
+        {
+          flagship.cover && (
+            <img
+              src={url(flagship.cover)}
+              alt={`Portada de ${flagship.title.display}`}
+              width="460"
+              height="690"
+              class="w-full border border-line"
+            />
+          )
+        }
+      </div>
+
+      <div>
+        <p class="eyebrow">La obra fundacional</p>
+        <h2 class="mt-3 font-display text-3xl font-bold text-ink sm:text-4xl">
+          {flagship.title.display}
+        </h2>
+        <p class="mt-1 font-mono text-sm text-ink-mute">{flagship.title.native}</p>
+
+        <div class="mt-6 space-y-4 text-[15px] leading-[1.75] text-ink-soft">
+          <p>
+            Estrenada el {formatDate(flagship.startDate)}, la serie de {flagship.episodes} episodios
+            adapta la novela visual de 5pb. y Nitroplus. Su primer tercio se toma su tiempo:
+            presenta a un grupo de estudiantes jugando a inventar cosas inútiles y deja que
+            el espectador se acomode en la comedia.
+          </p>
+          <p>
+            Después cobra. La obra convierte esa familiaridad en su arma principal, y el mismo
+            piso desordenado donde se calentaban plátanos pasa a ser el escenario de una historia
+            sobre repetir las mismas horas hasta romperse.
+          </p>
+        </div>
+
+        <dl class="mt-8 grid grid-cols-2 gap-x-6 gap-y-4 border-t border-line/60 pt-6 sm:grid-cols-4">
+          {
+            [
+              ['Estudio', flagship.studios[0] ?? '—'],
+              ['Episodios', String(flagship.episodes ?? '—')],
+              ['Puntuación', flagship.averageScore ? `${flagship.averageScore}/100` : '—'],
+              ['Origen', 'Novela visual'],
+            ].map(([term, value]) => (
+              <div>
+                <dt class="font-mono text-[10px] tracking-[0.16em] text-ink-mute uppercase">
+                  {term}
+                </dt>
+                <dd class="mt-1 font-display text-lg font-semibold text-ink">{value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+
+        <a
+          href={url(`/obras/${flagship.slug}`)}
+          class="mt-8 inline-flex items-center gap-2 font-display text-sm font-bold tracking-wide text-nixie uppercase transition-colors hover:text-nixie-glow"
+        >
+          Ficha completa
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* ─────────────  Obras destacadas  ───────────── */}
+  <section class="border-t border-line/60 bg-abyss/30">
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="eyebrow">Catálogo</p>
+          <h2 class="mt-2 font-display text-3xl font-bold text-ink">Series y películas</h2>
+        </div>
+        <a
+          href={url('/obras')}
+          class="font-display text-sm font-bold tracking-wide text-gel uppercase transition-colors hover:text-ink"
+        >
+          Las {meta.counts.media} obras →
+        </a>
+      </div>
+
+      <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        {featuredAnime.map((item) => <MediaCard item={item} />)}
+      </div>
+    </div>
+  </section>
+
+  {/* ─────────────  Reparto  ───────────── */}
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p class="eyebrow">Miembros del laboratorio</p>
+        <h2 class="mt-2 font-display text-3xl font-bold text-ink">Reparto principal</h2>
+      </div>
+      <a
+        href={url('/personajes')}
+        class="font-display text-sm font-bold tracking-wide text-gel uppercase transition-colors hover:text-ink"
+      >
+        Los {meta.counts.characters} personajes →
+      </a>
+    </div>
+
+    <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+      {mainCast.map((character) => <CharacterCard character={character} />)}
+    </div>
+  </section>
+
+  {/* ─────────────  Líneas de mundo  ───────────── */}
+  <section class="border-y border-line/60 bg-abyss/30">
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+      <p class="eyebrow">Estructura del universo</p>
+      <h2 class="mt-2 font-display text-3xl font-bold text-ink">Campos atractores</h2>
+      <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
+        Las líneas de mundo no se ramifican al azar: se agrupan en campos que convergen
+        en el mismo desenlace. Cambiar de detalle es fácil; cambiar de destino, no.
+      </p>
+
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          worldlines.map((line) => (
+            <a
+              href={url(`/lineas-de-mundo#${line.slug}`)}
+              class="group lab-panel flex flex-col p-5 transition-colors hover:border-nixie/50"
+            >
+              <span class="nixie-text font-mono text-2xl font-bold">{line.band}</span>
+              <h3 class="mt-3 font-display text-lg font-semibold text-ink transition-colors group-hover:text-nixie">
+                {line.name}
+              </h3>
+              <p class="mt-1 font-mono text-[11px] text-ink-mute">{line.divergence}</p>
+              <p class="mt-3 text-[13.5px] leading-relaxed text-ink-soft">
+                {truncate(line.summary, 130)}
+              </p>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  {/* ─────────────  Glosario  ───────────── */}
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p class="eyebrow">Terminología</p>
+        <h2 class="mt-2 font-display text-3xl font-bold text-ink">Conceptos clave</h2>
+      </div>
+      <a
+        href={url('/glosario')}
+        class="font-display text-sm font-bold tracking-wide text-gel uppercase transition-colors hover:text-ink"
+      >
+        Glosario completo →
+      </a>
+    </div>
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2">
+      {
+        featuredTerms.map((entry) => (
+          <a
+            href={url(`/glosario/${entry.slug}`)}
+            class="group lab-panel p-5 transition-colors hover:border-gel/50"
+          >
+            <h3 class="font-display text-xl font-semibold text-ink transition-colors group-hover:text-gel">
+              {entry.term}
+            </h3>
+            {entry.reading && (
+              <p class="mt-0.5 font-mono text-[11px] text-ink-mute">{entry.reading}</p>
+            )}
+            <p class="mt-3 text-[14px] leading-relaxed text-ink-soft">{entry.short}</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Base>

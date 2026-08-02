@@ -218,7 +218,8 @@ async function fetchCharacters() {
           description: cleanDescription(node.description),
           image: null, // se rellena mas abajo
           rawImage: node.image?.large ?? null,
-          voiceActors: (node.voiceActors ?? []).slice(0, 2).map((va) => ({
+          // AniList expone los seiyuu en el edge (relacion personaje↔obra), no en el nodo.
+          voiceActors: (edge.voiceActors ?? []).slice(0, 2).map((va) => ({
             id: va.id,
             name: va.name.full,
             native: va.name.native,
