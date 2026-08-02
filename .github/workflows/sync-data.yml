@@ -1,0 +1,48 @@
+name: Sincronizar datos de las APIs
+
+on:
+  schedule:
+    # Lunes a las 04:00 UTC.
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    name: Actualizar snapshot
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      # Si una API está caída, el pipeline conserva el snapshot previo en vez
+      # de romper: en ese caso no habrá cambios que confirmar y el job termina.
+      - name: Sincronizar desde AniList y Kitsu
+        run: npm run data
+
+      - name: Comprobar que el sitio sigue compilando
+        run: npm run build && npm run validate
+
+      - name: Confirmar los cambios si los hay
+        run: |
+          if git diff --quiet -- src/data public/media; then
+            echo "Sin cambios en los datos; no hay nada que confirmar."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data public/media
+          git commit -m "chore(data): sincronizacion automatica desde AniList y Kitsu"
+          git push
