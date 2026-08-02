@@ -1,0 +1,198 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Paleta: laboratorio nocturno + tubos nixie del Divergence Meter */
+  --color-void: #05060a;
+  --color-abyss: #0a0d16;
+  --color-panel: #101522;
+  --color-panel-2: #161d2e;
+  --color-line: #232c42;
+  --color-line-soft: #1a2133;
+
+  --color-nixie: #ff9d2f;
+  --color-nixie-dim: #b86a17;
+  --color-nixie-glow: #ffc576;
+
+  --color-gel: #34e2d4;
+  --color-gel-dim: #12867e;
+
+  --color-alert: #ff4d6d;
+  --color-plum: #a77bff;
+
+  --color-ink: #e8ecf6;
+  --color-ink-soft: #a8b2c9;
+  --color-ink-mute: #6c7796;
+
+  --font-display: 'Rajdhani', 'Chakra Petch', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', 'Menlo', monospace;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --radius-panel: 2px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-void);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: 'ss01', 'cv01';
+    overflow-x: hidden;
+  }
+
+  /* Rejilla + viñeta de fondo: el "laboratorio" */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background-image:
+      linear-gradient(rgba(52, 226, 212, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(52, 226, 212, 0.035) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 78%);
+  }
+
+  /* Scanlines CRT sutiles */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0px,
+      rgba(0, 0, 0, 0) 2px,
+      rgba(0, 0, 0, 0.16) 3px,
+      rgba(0, 0, 0, 0.16) 4px
+    );
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+  }
+
+  ::selection {
+    background: var(--color-nixie);
+    color: var(--color-void);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gel);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-abyss);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-line);
+    border: 2px solid var(--color-abyss);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-nixie-dim);
+  }
+}
+
+@layer components {
+  .lab-panel {
+    background: linear-gradient(160deg, var(--color-panel) 0%, var(--color-abyss) 100%);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-panel);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--color-nixie);
+  }
+
+  .nixie-text {
+    font-family: var(--font-mono);
+    color: var(--color-nixie);
+    text-shadow:
+      0 0 6px rgba(255, 157, 47, 0.65),
+      0 0 22px rgba(255, 157, 47, 0.3);
+  }
+
+  .gel-text {
+    color: var(--color-gel);
+    text-shadow: 0 0 12px rgba(52, 226, 212, 0.4);
+  }
+
+  /* Esquinas recortadas tipo HUD */
+  .clip-hud {
+    clip-path: polygon(
+      0 10px,
+      10px 0,
+      calc(100% - 10px) 0,
+      100% 10px,
+      100% calc(100% - 10px),
+      calc(100% - 10px) 100%,
+      10px 100%,
+      0 calc(100% - 10px)
+    );
+  }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+}
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 18px currentColor;
+  }
+
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+  }
+}
+
+/* Respeta preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  body::after {
+    display: none;
+  }
+}

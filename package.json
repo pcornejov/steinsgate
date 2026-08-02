@@ -1,0 +1,26 @@
+{
+  "name": "steins-gate-encyclopedia",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enciclopedia web de Steins;Gate — construida con Astro, datos de APIs públicas.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "data": "node scripts/fetch-data.mjs",
+    "validate": "node scripts/validate.mjs",
+    "verify": "npm run check && npm run build && npm run validate"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.1.6",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.9.2"
+  }
+}
