@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-08-02T04:50:05.292Z",
+  "sources": [
+    {
+      "name": "AniList",
+      "url": "https://anilist.co",
+      "api": "https://graphql.anilist.co",
+      "license": "API publica sin clave"
+    },
+    {
+      "name": "Kitsu",
+      "url": "https://kitsu.app",
+      "api": "https://kitsu.io/api/edge",
+      "license": "API publica sin clave"
+    }
+  ],
+  "counts": {
+    "media": 30,
+    "anime": 7,
+    "manga": 23,
+    "characters": 22,
+    "staff": 35,
+    "episodes": 48
+  },
+  "degraded": false
+}

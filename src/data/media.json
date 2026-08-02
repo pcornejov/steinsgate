@@ -1,0 +1,1777 @@
+[
+  {
+    "id": 9253,
+    "malId": 9253,
+    "slug": "steins-gate-9253",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate",
+      "english": "Steins;Gate",
+      "native": "シュタインズ・ゲート",
+      "display": "Steins;Gate"
+    },
+    "synonyms": [
+      "S;G",
+      "סטיינס;גייט",
+      "命运石之门",
+      "Врата;Штейна"
+    ],
+    "description": "Self-proclaimed mad scientist Okabe Rintarou lives in a small room in Akihabara, where he invents \"future gadgets\" with fellow lab members Shiina Mayuri, his air-headed childhood friend, and Hashida Itaru, an otaku hacker. The three pass the time by tinkering with their latest creation, a \"Phone Microwave\" that can be controlled through text messages. \n\nThe lab members soon face a string of mysterious incidents that lead to a game-changing discovery: the Phone Microwave can send emails to the past and thus alter history. Adapted from the critically acclaimed visual novel by 5pb. and Nitroplus, Steins;Gate takes Okabe to the depths of scientific theory and human despair as he faces the dire consequences of changing the past.",
+    "episodes": 24,
+    "chapters": null,
+    "volumes": null,
+    "duration": 24,
+    "startDate": "2011-04-06",
+    "endDate": "2011-09-14",
+    "season": "SPRING",
+    "seasonYear": 2011,
+    "averageScore": 89,
+    "popularity": 585780,
+    "favourites": 55777,
+    "genres": [
+      "Drama",
+      "Psychological",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [
+      "WHITE FOX"
+    ],
+    "trailer": {
+      "youtubeId": "27OZc-ku6is"
+    },
+    "accentColor": "#ffd6ae",
+    "cover": "/media/covers/steins-gate-9253-3a5c14fb.jpg",
+    "banner": "/media/banners/steins-gate-9253-bf5949f7.jpg",
+    "siteUrl": "https://anilist.co/anime/9253",
+    "relations": [
+      {
+        "id": 10863,
+        "relationType": "SEQUEL"
+      },
+      {
+        "id": 20907,
+        "relationType": "SIDE_STORY"
+      },
+      {
+        "id": 21624,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 47517,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 11577,
+        "relationType": "SIDE_STORY"
+      },
+      {
+        "id": 58897,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 127015,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 10863,
+    "malId": 10863,
+    "slug": "steins-gate-egoistic-poriomania-10863",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Oukoubakko no Poriomania",
+      "english": "Steins;Gate: Egoistic Poriomania",
+      "native": "シュタインズ・ゲート 横行跋扈のポリオマニア",
+      "display": "Steins;Gate: Egoistic Poriomania"
+    },
+    "synonyms": [
+      "Steins",
+      "Gate Special",
+      "Poriomanía del egoismo"
+    ],
+    "description": "Special episode included in the last of the nine Blu-ray/DVD volumes. \n\nThe story is set a few months after the last scene of the television series. On a calm day in Akihabara, Okabe and the other laboratory members are invited by Feyris to go to America. Mayuri and the rest are planning to reunite with Kurisu, who had come back to an American laboratory. A few days later, Okabe's mad scientist persona Hououin Kyouma arrives alone at the airport in Los Angeles, where he may be taking the first step to leading the world into chaos.\n\n(Source: Anime News Network)",
+    "episodes": 1,
+    "chapters": null,
+    "volumes": null,
+    "duration": 25,
+    "startDate": "2012-02-22",
+    "endDate": "2012-02-22",
+    "season": "WINTER",
+    "seasonYear": 2012,
+    "averageScore": 81,
+    "popularity": 114637,
+    "favourites": 1049,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [
+      "WHITE FOX"
+    ],
+    "trailer": null,
+    "accentColor": null,
+    "cover": "/media/covers/steins-gate-egoistic-poriomania-10863-df742912.png",
+    "banner": "/media/banners/steins-gate-egoistic-poriomania-10863-6e8f2aac.jpg",
+    "siteUrl": "https://anilist.co/anime/10863",
+    "relations": [
+      {
+        "id": 9253,
+        "relationType": "PREQUEL"
+      },
+      {
+        "id": 11577,
+        "relationType": "SEQUEL"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 11577,
+    "malId": 11577,
+    "slug": "steins-gate-the-movie-load-region-of-deja-vu-11577",
+    "type": "ANIME",
+    "format": "MOVIE",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Fuka Ryouiki no Déjà vu",
+      "english": "Steins;Gate The Movie – Load Region of Déjà Vu",
+      "native": "劇場版 シュタインズゲート 負荷領域のデジャヴ",
+      "display": "Steins;Gate The Movie – Load Region of Déjà Vu"
+    },
+    "synonyms": [],
+    "description": "After a year in America, Kurisu Makise returns to Akihabara and reunites with Rintarou Okabe. However, their reunion is cut short when Okabe begins to experience recurring flashes of other timelines as the consequences of his time traveling start to manifest. These side effects eventually culminate in Okabe suddenly vanishing from the world, and only the startled Kurisu has any memory of his existence.\n\nIn the midst of despair, Kurisu is faced with a truly arduous choice that will test both her duty as a scientist and her loyalty as a friend: follow Okabe's advice and stay away from traveling through time to avoid the potential consequences it may have on the world lines, or ignore it to rescue the person that she cherishes most. Regardless of her decision, the path she chooses is one that will affect the past, the present, and the future.",
+    "episodes": 1,
+    "chapters": null,
+    "volumes": null,
+    "duration": 90,
+    "startDate": "2013-04-20",
+    "endDate": "2013-04-20",
+    "season": "SPRING",
+    "seasonYear": 2013,
+    "averageScore": 82,
+    "popularity": 138403,
+    "favourites": 2257,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "source": "ORIGINAL",
+    "studios": [
+      "WHITE FOX"
+    ],
+    "trailer": {
+      "youtubeId": "rDsCNz3pWUg"
+    },
+    "accentColor": "#5daee4",
+    "cover": "/media/covers/steins-gate-the-movie-load-region-of-deja-vu-11577-006ae154.png",
+    "banner": "/media/banners/steins-gate-the-movie-load-region-of-deja-vu-11577-ab26e757.jpg",
+    "siteUrl": "https://anilist.co/anime/11577",
+    "relations": [
+      {
+        "id": 10863,
+        "relationType": "PREQUEL"
+      },
+      {
+        "id": 9253,
+        "relationType": "PARENT"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 20907,
+    "malId": 27957,
+    "slug": "steins-gate-soumei-eichi-no-cognitive-computing-20907",
+    "type": "ANIME",
+    "format": "ONA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Soumei Eichi no Cognitive Computing",
+      "english": null,
+      "native": "Steins;Gate 聡明叡智のコグニティブ・コンピューティング",
+      "display": "Steins;Gate: Soumei Eichi no Cognitive Computing"
+    },
+    "synonyms": [
+      "Steins;Gate: The Sagacious Wisdom of Cognitive Computing"
+    ],
+    "description": "Anime shorts created in collaboration with IBM.\n\nEpisode 1: Cooking-hen\n\nEpisode 2: Navigation-hen\n\nEpisode 3: Fashion-hen\n\nEpisode.4: Kaigi-hen\n\n(Source: Anime News Network)",
+    "episodes": 4,
+    "chapters": null,
+    "volumes": null,
+    "duration": 4,
+    "startDate": "2014-10-14",
+    "endDate": "2014-11-11",
+    "season": "FALL",
+    "seasonYear": 2014,
+    "averageScore": 72,
+    "popularity": 32243,
+    "favourites": 209,
+    "genres": [
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "source": "ORIGINAL",
+    "studios": [
+      "WHITE FOX"
+    ],
+    "trailer": null,
+    "accentColor": "#e4ae43",
+    "cover": "/media/covers/steins-gate-soumei-eichi-no-cognitive-computing-20907-d612440c.jpg",
+    "banner": "/media/banners/steins-gate-soumei-eichi-no-cognitive-computing-20907-84fe8d96.png",
+    "siteUrl": "https://anilist.co/anime/20907",
+    "relations": [
+      {
+        "id": 9253,
+        "relationType": "PARENT"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 21624,
+    "malId": 32188,
+    "slug": "steins-gate-0-23-divide-by-zero-21624",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Kyoukaimenjou no Missing Link - Divide By Zero",
+      "english": "Steins;Gate 0: 23β -Divide by Zero-",
+      "native": "シュタインズ・ゲート 境界面上のミッシングリンク -Divide By Zero-",
+      "display": "Steins;Gate 0: 23β -Divide by Zero-"
+    },
+    "synonyms": [
+      "Steins;Gate: Episode 23 (β)"
+    ],
+    "description": "Alternate 23rd episode of Steins;Gate, which leads into the story of Steins;Gate 0. Included with the Steins;Gate Complete Blu-ray Box.\n\nThe main difference between this episode and the original episode 23 is that Okabe does not receive the Movie Mail from his future self, due to Mayuri begging Suzuha to stop relying on Okabe to prevent World War Three. By not opening the Movie Mail Okabe does not find out about Operation Skuld and is unsuccessful in averting both Kurisu's death and World War Three, thereby leading into the story of Steins;Gate 0",
+    "episodes": 1,
+    "chapters": null,
+    "volumes": null,
+    "duration": 24,
+    "startDate": "2015-12-03",
+    "endDate": "2015-12-03",
+    "season": "FALL",
+    "seasonYear": 2015,
+    "averageScore": 81,
+    "popularity": 82732,
+    "favourites": 935,
+    "genres": [
+      "Drama",
+      "Psychological",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [
+      "WHITE FOX"
+    ],
+    "trailer": null,
+    "accentColor": "#f1d6c9",
+    "cover": "/media/covers/steins-gate-0-23-divide-by-zero-21624-758daafb.jpg",
+    "banner": "/media/banners/steins-gate-0-23-divide-by-zero-21624-9c334d94.jpg",
+    "siteUrl": "https://anilist.co/anime/21624",
+    "relations": [
+      {
+        "id": 9253,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 21127,
+        "relationType": "SEQUEL"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 21127,
+    "malId": 30484,
+    "slug": "steins-gate-0-21127",
+    "type": "ANIME",
+    "format": "TV",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate 0",
+      "english": "Steins;Gate 0",
+      "native": "シュタインズ・ゲート ゼロ",
+      "display": "Steins;Gate 0"
+    },
+    "synonyms": [
+      "s;g0",
+      "命运石之门0"
+    ],
+    "description": "The eccentric, self-proclaimed mad scientist Rintarou Okabe has become a shell of his former self. Depressed and traumatized after failing to rescue his friend, he has decided to forsake his mad scientist alter ego and live as an ordinary college student. Surrounded by friends who know little of his time travel experiences, Okabe spends his days trying to forget the horrors of his adventures alone.\n\nWhile working as a receptionist at a college technology forum, Okabe meets the short, spunky Maho Hiyajo, who\nlater turns out to be the interpreter at the forum's presentation, conducted by Professor Alexis Leskinen. In front of a stunned crowd, Alexis and Maho unveil Amadeus—a revolutionary AI capable of storing a person's memories and creating a perfect simulation of that person complete with their personality and quirks. Meeting with Maho and Alexis after the presentation, Okabe learns that the two were Kurisu's colleagues in university, and that they have simulated her in Amadeus. Hired by Alexis to research the simulation's behavior, Okabe is given the chance to interact with the shadow of a long-lost dear friend. Dangerously tangled in the past, Okabe must face the harsh reality and carefully maneuver around the disastrous consequences that come with disturbing the natural flow of time.",
+    "episodes": 23,
+    "chapters": null,
+    "volumes": null,
+    "duration": 24,
+    "startDate": "2018-04-12",
+    "endDate": "2018-09-27",
+    "season": "SPRING",
+    "seasonYear": 2018,
+    "averageScore": 84,
+    "popularity": 219605,
+    "favourites": 8300,
+    "genres": [
+      "Drama",
+      "Psychological",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [
+      "WHITE FOX"
+    ],
+    "trailer": {
+      "youtubeId": "IVVihb4-cHo"
+    },
+    "accentColor": "#f1d6bb",
+    "cover": "/media/covers/steins-gate-0-21127-82e0a566.jpg",
+    "banner": "/media/banners/steins-gate-0-21127-cd1039a0.jpg",
+    "siteUrl": "https://anilist.co/anime/21127",
+    "relations": [
+      {
+        "id": 21624,
+        "relationType": "PREQUEL"
+      },
+      {
+        "id": 104174,
+        "relationType": "SIDE_STORY"
+      },
+      {
+        "id": 102247,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 104174,
+    "malId": 37492,
+    "slug": "steins-gate-0-valentine-s-of-crystal-polymorphism-bittersweet-in",
+    "type": "ANIME",
+    "format": "OVA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate 0: Kesshou Takei no Valentine - Bittersweet Day",
+      "english": "Steins;Gate 0: Valentine's of Crystal Polymorphism -Bittersweet Intermedio-",
+      "native": "シュタインズ・ゲート ゼロ 結晶多形のバレンタイン",
+      "display": "Steins;Gate 0: Valentine's of Crystal Polymorphism -Bittersweet Intermedio-"
+    },
+    "synonyms": [
+      "Steins;Gate 0 Special",
+      "San Valentín de polimorfismo de cristal: Intermedio agridulce"
+    ],
+    "description": "Unaired episode included with the volume 6 BD/DVD release of Steins;Gate 0. A special day approaches during a lull in the chaos. It's that time of year to give chocolate to the ones you love, but not everyone finds that an easy task.\n\nWith Valentine's Day just around the corner, the girls of the Future Gadget Lab discover that Kagari has never celebrated the occasion before! Determined to make this year's holiday the best one yet, they all set out to make delicious homemade chocolates together.\n\nHowever, with many of their quirks causing kitchen disasters, this may prove to be too hard a task. Will their feelings ever reach those of their heart's desire?",
+    "episodes": 1,
+    "chapters": null,
+    "volumes": null,
+    "duration": 24,
+    "startDate": "2018-12-21",
+    "endDate": "2018-12-21",
+    "season": "WINTER",
+    "seasonYear": 2019,
+    "averageScore": 71,
+    "popularity": 37938,
+    "favourites": 309,
+    "genres": [
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "source": "ORIGINAL",
+    "studios": [
+      "WHITE FOX"
+    ],
+    "trailer": {
+      "youtubeId": "0_d99rIQELo"
+    },
+    "accentColor": null,
+    "cover": "/media/covers/steins-gate-0-valentine-s-of-crystal-polymorphism-bittersweet-in-da8bd8c9.png",
+    "banner": "/media/banners/steins-gate-0-valentine-s-of-crystal-polymorphism-bittersweet-in-66647d39.jpg",
+    "siteUrl": "https://anilist.co/anime/104174",
+    "relations": [
+      {
+        "id": 21127,
+        "relationType": "PARENT"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 47517,
+    "malId": 17517,
+    "slug": "steins-gate-47517",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate",
+      "english": "Steins;Gate",
+      "native": "シュタインズ・ゲート",
+      "display": "Steins;Gate"
+    },
+    "synonyms": [
+      "Steins Gate",
+      "Врата;Штейна"
+    ],
+    "description": "What do you get when you cross a microwave with a cell phone? Apparently, a time machine! Self-proclaimed mad scientist Okarin and the Future Gadgets team now have the ability to send text messages into the past. Will this newfound power be used for personal gain? To change the world? Or for something much more sinister... ? \n\n(Source: Udon Entertainment)",
+    "episodes": null,
+    "chapters": 23,
+    "volumes": 3,
+    "duration": null,
+    "startDate": "2009-09-26",
+    "endDate": "2013-07-27",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 76,
+    "popularity": 7838,
+    "favourites": 255,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#d6f143",
+    "cover": "/media/covers/steins-gate-47517-34f46bc5.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/47517",
+    "relations": [
+      {
+        "id": 77825,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 79381,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 85137,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 58899,
+        "relationType": "PREQUEL"
+      },
+      {
+        "id": 9253,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 102247,
+        "relationType": "SEQUEL"
+      },
+      {
+        "id": 58897,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 121015,
+        "relationType": "SPIN_OFF"
+      },
+      {
+        "id": 121016,
+        "relationType": "SPIN_OFF"
+      },
+      {
+        "id": 123282,
+        "relationType": "SPIN_OFF"
+      },
+      {
+        "id": 57965,
+        "relationType": "SPIN_OFF"
+      },
+      {
+        "id": 85548,
+        "relationType": "SPIN_OFF"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 50699,
+    "malId": 20699,
+    "slug": "steins-gate-boukan-no-rebellion-50699",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Boukan no Rebellion",
+      "english": null,
+      "native": "STEINS;GATE 亡環のリベリオン",
+      "display": "Steins;Gate: Boukan no Rebellion"
+    },
+    "synonyms": [
+      "Steins;Gate: Rebellion of the Missing Ring"
+    ],
+    "description": "This is an original story expanded from the STEINS;GATE game, and focusing on the heroine Amane Suzuha. In 2036, a monopoly on time machines has created world peace, but at the cost of human liberty.\n\nSuzuha has followed in her late father's footsteps in fighting alongside the Valkyrie rebellion force to change the world. After the group fails on a major mission, Suzuha has almost no hope left. But then she discovers that her father left something for her: a time machine. Using this, maybe Suzuha will have the power to finally destroy this dystopian society and create a better present and future!\n\n(Source: MangaHelpers)",
+    "episodes": null,
+    "chapters": 18,
+    "volumes": 3,
+    "duration": null,
+    "startDate": "2009-12-28",
+    "endDate": "2011-07-30",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 70,
+    "popularity": 1532,
+    "favourites": 19,
+    "genres": [
+      "Sci-Fi"
+    ],
+    "source": null,
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#e4ae5d",
+    "cover": "/media/covers/steins-gate-boukan-no-rebellion-50699-47706a78.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/50699",
+    "relations": [
+      {
+        "id": 47517,
+        "relationType": "PARENT"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 58899,
+    "malId": 28899,
+    "slug": "steins-gate-onshuu-no-brownian-motion-58899",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate Onshuu no Brownian Motion",
+      "english": null,
+      "native": "STEINS;GATE恩讐のブラウニアンモーション",
+      "display": "Steins;Gate Onshuu no Brownian Motion"
+    },
+    "synonyms": [],
+    "description": "Tells the story of how Tennouji Yuugo met Suzu Hashida.",
+    "episodes": null,
+    "chapters": 11,
+    "volumes": 2,
+    "duration": null,
+    "startDate": "2010-07-30",
+    "endDate": "2012-04-27",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 75,
+    "popularity": 1841,
+    "favourites": 31,
+    "genres": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "source": null,
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#e4ae5d",
+    "cover": "/media/covers/steins-gate-onshuu-no-brownian-motion-58899-d53d20da.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/58899",
+    "relations": [
+      {
+        "id": 47517,
+        "relationType": "SEQUEL"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 127015,
+    "malId": null,
+    "slug": "steins-gate-enkan-rensa-no-uroborosu-127015",
+    "type": "MANGA",
+    "format": "NOVEL",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "STEINS;GATE: Enkan Rensa no Uroborosu",
+      "english": null,
+      "native": "STEINS;GATE─シュタインズゲート- 円環連鎖のウロボロス",
+      "display": "STEINS;GATE: Enkan Rensa no Uroborosu"
+    },
+    "synonyms": [],
+    "description": "A light novel adaptation of the well known visual novel \"Steins;gate\"",
+    "episodes": null,
+    "chapters": 14,
+    "volumes": 2,
+    "duration": null,
+    "startDate": "2010-08-20",
+    "endDate": "2011-03-19",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": null,
+    "popularity": 319,
+    "favourites": 19,
+    "genres": [
+      "Drama",
+      "Psychological",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#50bbe4",
+    "cover": "/media/covers/steins-gate-enkan-rensa-no-uroborosu-127015-ba287b8c.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/127015",
+    "relations": [
+      {
+        "id": 9253,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 194394,
+        "relationType": "SPIN_OFF"
+      }
+    ]
+  },
+  {
+    "id": 69859,
+    "malId": 39859,
+    "slug": "steins-gate-chouyoku-no-divergence-reverse-69859",
+    "type": "MANGA",
+    "format": "NOVEL",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate Chouyoku no Divergence: Reverse",
+      "english": null,
+      "native": "STEINS;GATE 蝶翼のダイバージェンス：Reverse",
+      "display": "Steins;Gate Chouyoku no Divergence: Reverse"
+    },
+    "synonyms": [],
+    "description": "A Steins;Gate Light Novel that takes place in the anime in the perspective of Makise Kurisu \n\nThis light novel starts at Episode 1 of the anime, and ends at Episode 6, it also includes some spoilers from the source material of Steins;Gate, the visual novel.",
+    "episodes": null,
+    "chapters": null,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2011-01-07",
+    "endDate": null,
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 79,
+    "popularity": 1632,
+    "favourites": 10,
+    "genres": [
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#78aed6",
+    "cover": "/media/covers/steins-gate-chouyoku-no-divergence-reverse-69859-3b39c3b9.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/69859",
+    "relations": [
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 58897,
+    "malId": 28897,
+    "slug": "steins-gate-shijou-saikyou-no-slight-fever-58897",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Shijou Saikyou no Slight Fever",
+      "english": null,
+      "native": "STEINS;GATE 史上最強のスライトフィーバー",
+      "display": "Steins;Gate: Shijou Saikyou no Slight Fever"
+    },
+    "synonyms": [],
+    "description": "A manga set in the Steins;Gate universe told by the viewpoint of Makise Kurisu.",
+    "episodes": null,
+    "chapters": 14,
+    "volumes": 2,
+    "duration": null,
+    "startDate": "2011-01-08",
+    "endDate": "2012-09-22",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 63,
+    "popularity": 864,
+    "favourites": 9,
+    "genres": [
+      "Adventure",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#e4a150",
+    "cover": "/media/covers/steins-gate-shijou-saikyou-no-slight-fever-58897-8fe89de8.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/58897",
+    "relations": [
+      {
+        "id": 47517,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 9253,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 121015,
+    "malId": 74335,
+    "slug": "steins-gate-121015",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins Gate!",
+      "english": null,
+      "native": "しゅたいんず・げーと！",
+      "display": "Steins Gate!"
+    },
+    "synonyms": [],
+    "description": "A comedic 4-koma spin-off series for Steins;Gate.",
+    "episodes": null,
+    "chapters": 11,
+    "volumes": 2,
+    "duration": null,
+    "startDate": "2011-01-27",
+    "endDate": "2012-03-27",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 64,
+    "popularity": 551,
+    "favourites": 9,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#d6c91a",
+    "cover": "/media/covers/steins-gate-121015-2676abe9.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/121015",
+    "relations": [
+      {
+        "id": 47517,
+        "relationType": "PARENT"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 121016,
+    "malId": 74343,
+    "slug": "steins-gate-drops-121016",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "STEINS;GATE DROPS",
+      "english": null,
+      "native": "STEINS;GATE DROPS",
+      "display": "STEINS;GATE DROPS"
+    },
+    "synonyms": [],
+    "description": "A manga adaptation of the fandisc STEINS;GATE: Hiyoku Renri no Darling (STEINS;GATE: My Darling's Embrace).",
+    "episodes": null,
+    "chapters": 8,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2011-08-26",
+    "endDate": "2012-04-14",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": null,
+    "popularity": 345,
+    "favourites": 4,
+    "genres": [
+      "Comedy",
+      "Ecchi",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#f1e450",
+    "cover": "/media/covers/steins-gate-drops-121016-9679d0ff.png",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/121016",
+    "relations": [
+      {
+        "id": 47517,
+        "relationType": "PARENT"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 91997,
+    "malId": 74345,
+    "slug": "steins-gate-hoshikuzu-no-duplet-91997",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Hoshikuzu no Duplet",
+      "english": null,
+      "native": "STEINS;GATE 星屑のデュプレット",
+      "display": "Steins;Gate: Hoshikuzu no Duplet"
+    },
+    "synonyms": [],
+    "description": null,
+    "episodes": null,
+    "chapters": 7,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2011-08-26",
+    "endDate": "2012-02-24",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": null,
+    "popularity": 334,
+    "favourites": 4,
+    "genres": [
+      "Romance",
+      "Sci-Fi",
+      "Slice of Life"
+    ],
+    "source": "ORIGINAL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": null,
+    "cover": "/media/covers/steins-gate-hoshikuzu-no-duplet-91997-547cb9e8.png",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/91997",
+    "relations": [
+      {
+        "id": 47517,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 102247,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 121015,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 104174,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 9253,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 21127,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 121016,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 85137,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 58897,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 77825,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 10863,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 50699,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 81945,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 91995,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 21624,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 85548,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 181143,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 58899,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 11577,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 158772,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 127015,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 20907,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 123282,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 181488,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 89627,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 79381,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 57965,
+        "relationType": "CHARACTER"
+      },
+      {
+        "id": 69859,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 57965,
+    "malId": 27965,
+    "slug": "steins-gate-hiyoku-renri-no-sweets-honey-57965",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Hiyoku Renri no Sweets Honey",
+      "english": null,
+      "native": "STEINS;GATE 比翼恋理のスイーツはにー",
+      "display": "Steins;Gate: Hiyoku Renri no Sweets Honey"
+    },
+    "synonyms": [],
+    "description": "Spin-off of Steins;Gate, based on the Kurisu route of the Hiyoku Renri no Darling game.",
+    "episodes": null,
+    "chapters": 6,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2011-08-30",
+    "endDate": "2012-01-30",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 65,
+    "popularity": 718,
+    "favourites": 4,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#e4a15d",
+    "cover": "/media/covers/steins-gate-hiyoku-renri-no-sweets-honey-57965-74d72825.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/57965",
+    "relations": [
+      {
+        "id": 85548,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 158772,
+        "relationType": "SEQUEL"
+      },
+      {
+        "id": 47517,
+        "relationType": "PARENT"
+      },
+      {
+        "id": 181488,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 194394,
+    "malId": null,
+    "slug": "steins-gate-hiyoku-renri-no-underling-194394",
+    "type": "MANGA",
+    "format": "NOVEL",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "STEINS;GATE Hiyoku Renri No Underling",
+      "english": null,
+      "native": "STEINS;GATE 比翼連理のアンダーリン",
+      "display": "STEINS;GATE Hiyoku Renri No Underling"
+    },
+    "synonyms": [
+      "Steins;Gate: My Darling's Embrace"
+    ],
+    "description": "A light novel series adapting the events and routes of the Steins;Gate My Darling's Embrace visual novel.\n\nNote: Includes 7 extra chapters.",
+    "episodes": null,
+    "chapters": 23,
+    "volumes": 3,
+    "duration": null,
+    "startDate": "2011-12-20",
+    "endDate": "2012-08-18",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": null,
+    "popularity": 52,
+    "favourites": 0,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#f16b35",
+    "cover": "/media/covers/steins-gate-hiyoku-renri-no-underling-194394-36cf99fe.png",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/194394",
+    "relations": [
+      {
+        "id": 127015,
+        "relationType": "PARENT"
+      }
+    ]
+  },
+  {
+    "id": 85548,
+    "malId": 74595,
+    "slug": "steins-gate-loving-vows-of-the-future-honey-85548",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Hiyoku Renri no Future Honey",
+      "english": "Steins,Gate: Loving Vows of the Future Honey",
+      "native": "STEINS;GATE 比翼恋理のフューチャーはにー",
+      "display": "Steins,Gate: Loving Vows of the Future Honey"
+    },
+    "synonyms": [],
+    "description": "Spin-off of Steins;Gate, based on the Suzuha route of the Hiyoku Renri no Darling game.",
+    "episodes": null,
+    "chapters": 5,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2012-04-10",
+    "endDate": "2012-08-10",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 60,
+    "popularity": 480,
+    "favourites": 2,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "source": null,
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#f1bb78",
+    "cover": "/media/covers/steins-gate-loving-vows-of-the-future-honey-85548-3dc6b627.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/85548",
+    "relations": [
+      {
+        "id": 57965,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 47517,
+        "relationType": "PARENT"
+      },
+      {
+        "id": 181488,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 158772,
+    "malId": null,
+    "slug": "steins-gate-motto-hiyoku-renri-no-sweets-honey-158772",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Motto Hiyoku Renri no Sweets Honey",
+      "english": null,
+      "native": "Steins;Gate もっと比翼恋理のスイーツはにー",
+      "display": "Steins;Gate: Motto Hiyoku Renri no Sweets Honey"
+    },
+    "synonyms": [],
+    "description": null,
+    "episodes": null,
+    "chapters": 6,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2012-04-28",
+    "endDate": "2012-10-28",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": null,
+    "popularity": 122,
+    "favourites": 2,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#e4d65d",
+    "cover": "/media/covers/steins-gate-motto-hiyoku-renri-no-sweets-honey-158772-ad629fd6.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/158772",
+    "relations": [
+      {
+        "id": 57965,
+        "relationType": "PREQUEL"
+      },
+      {
+        "id": 181143,
+        "relationType": "SEQUEL"
+      },
+      {
+        "id": 181488,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 77825,
+    "malId": 47825,
+    "slug": "steins-gate-aishin-meizu-no-babel-77825",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Aishin Meizu no Babel",
+      "english": null,
+      "native": "シュタインズ・ゲート - 哀心迷図のバベル",
+      "display": "Steins;Gate: Aishin Meizu no Babel"
+    },
+    "synonyms": [
+      "STEINS",
+      "GATE 哀心迷図のバベル",
+      "Steins;Gate - Babel of the Grieved Maze"
+    ],
+    "description": "A drama CD adaptation of Steins;Gate: Aishin Meizu no Babel, an alternate take on the original Steins;Gate story, told from Makise Kurisu's point of view, being illustrated by Shinichirou Nariie.\n\nAfter meeting Okabe Rintarou and the rest of the Lab Members, Kurisu reflects on her past with her estranged father and seeks to set things right with him, not knowing of the fate that awaits her.",
+    "episodes": null,
+    "chapters": 20,
+    "volumes": 4,
+    "duration": null,
+    "startDate": "2012-05-19",
+    "endDate": "2014-01-18",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 79,
+    "popularity": 1670,
+    "favourites": 52,
+    "genres": [
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#f1d6bb",
+    "cover": "/media/covers/steins-gate-aishin-meizu-no-babel-77825-b90e5cdd.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/77825",
+    "relations": [
+      {
+        "id": 47517,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 81945,
+    "malId": 51945,
+    "slug": "steins-gate-heni-kuukan-no-octet-81945",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Heni Kuukan no Octet",
+      "english": null,
+      "native": "STEINS;GATE 変移空間のオクテット",
+      "display": "Steins;Gate: Heni Kuukan no Octet"
+    },
+    "synonyms": [
+      "Steins;Gate: Octet of Spatial Mutation",
+      "Steins;Gate: Variant Space Octet"
+    ],
+    "description": null,
+    "episodes": null,
+    "chapters": 9,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2012-06-08",
+    "endDate": "2013-02-10",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 58,
+    "popularity": 401,
+    "favourites": 2,
+    "genres": [
+      "Comedy",
+      "Ecchi",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#f1ae5d",
+    "cover": "/media/covers/steins-gate-heni-kuukan-no-octet-81945-2f78224b.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/81945",
+    "relations": [
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 181488,
+    "malId": 106311,
+    "slug": "steins-gate-hiyoku-renri-no-nyan2-crisis-181488",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Hiyoku Renri no +Nyan2 Crisis☆",
+      "english": null,
+      "native": "STEINS;GATE 比翼恋理の+ニャン2 くらいしす☆",
+      "display": "Steins;Gate: Hiyoku Renri no +Nyan2 Crisis☆"
+    },
+    "synonyms": [],
+    "description": null,
+    "episodes": null,
+    "chapters": 8,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2012-06-20",
+    "endDate": "2013-01-20",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": null,
+    "popularity": 115,
+    "favourites": 1,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#e46b50",
+    "cover": "/media/covers/steins-gate-hiyoku-renri-no-nyan2-crisis-181488-2064634e.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/181488",
+    "relations": [
+      {
+        "id": 57965,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 181143,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 85548,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 158772,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 181143,
+    "malId": null,
+    "slug": "steins-gate-hiyoku-renri-no-sweets-honey-final-181143",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Hiyoku Renri no Sweets Honey Final",
+      "english": null,
+      "native": "STEINS;GATE 比翼恋理のスイーツはにーふぁいなる",
+      "display": "Steins;Gate: Hiyoku Renri no Sweets Honey Final"
+    },
+    "synonyms": [],
+    "description": null,
+    "episodes": null,
+    "chapters": 6,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2012-11-30",
+    "endDate": "2013-04-30",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": null,
+    "popularity": 78,
+    "favourites": 1,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#e45050",
+    "cover": "/media/covers/steins-gate-hiyoku-renri-no-sweets-honey-final-181143-a1e5739a.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/181143",
+    "relations": [
+      {
+        "id": 158772,
+        "relationType": "PREQUEL"
+      },
+      {
+        "id": 181488,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 79381,
+    "malId": 49381,
+    "slug": "steins-gate-heiji-kyokusen-no-epigraph-79381",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Heiji Kyokusen no Epigraph",
+      "english": null,
+      "native": "Steins;Gate 閉時曲線のエピグラフ",
+      "display": "Steins;Gate: Heiji Kyokusen no Epigraph"
+    },
+    "synonyms": [
+      "Steins;Gate: Epigraph of the Closed Curve"
+    ],
+    "description": "First part of the Epigraph Trilogy, occurring during the winter of 2010 in the Beta Attractor Field around World line divergences 1.129848 and 1.130205%.",
+    "episodes": null,
+    "chapters": 11,
+    "volumes": 2,
+    "duration": null,
+    "startDate": "2013-02-22",
+    "endDate": "2013-12-27",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 68,
+    "popularity": 801,
+    "favourites": 7,
+    "genres": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "source": "ORIGINAL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": null,
+    "cover": "/media/covers/steins-gate-heiji-kyokusen-no-epigraph-79381-95f43da5.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/79381",
+    "relations": [
+      {
+        "id": 85137,
+        "relationType": "SEQUEL"
+      },
+      {
+        "id": 47517,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 91995,
+    "malId": 74337,
+    "slug": "steins-gate-mugen-enten-no-arc-light-91995",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Mugen Enten no Arc Light",
+      "english": null,
+      "native": "STEINS;GATE 無限遠点のアークライト",
+      "display": "Steins;Gate: Mugen Enten no Arc Light"
+    },
+    "synonyms": [
+      "Steins,Gate: Arc-light of the Sky",
+      "Steins;Gate - Arc Light of the Point at Infinity"
+    ],
+    "description": "The manga, based on 2010 drama CD, tells the story of what Mayuri experiences during the final chapter of the visual novel (anime episode 23) and the lives of Mayuri, Okabe, Daru, Suzuha, and Ruka in the year after Okabe's first failed attempt to save Kurisu in the 1.129848% β world line divergence.",
+    "episodes": null,
+    "chapters": 6,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2014-03-19",
+    "endDate": "2014-08-19",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 73,
+    "popularity": 994,
+    "favourites": 26,
+    "genres": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "source": "OTHER",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#e4c943",
+    "cover": "/media/covers/steins-gate-mugen-enten-no-arc-light-91995-8e057ba8.jpg",
+    "banner": "/media/banners/steins-gate-mugen-enten-no-arc-light-91995-c512e849.jpg",
+    "siteUrl": "https://anilist.co/manga/91995",
+    "relations": [
+      {
+        "id": 102247,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 123282,
+    "malId": null,
+    "slug": "steins-gate-senkei-kousoku-no-mosaicism-123282",
+    "type": "MANGA",
+    "format": "NOVEL",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate: Senkei Kousoku no Mosaicism",
+      "english": null,
+      "native": "STEINS;GATE 線形拘束のモザイシズム",
+      "display": "Steins;Gate: Senkei Kousoku no Mosaicism"
+    },
+    "synonyms": [
+      "Steins;Gate: Linear Bounded Mosaicism"
+    ],
+    "description": "Novelization of Steins;Gate Senkei Kousoku no Phenogram visual novel.\n\n(Steins;Gate: Linear Bounded Phenogram).",
+    "episodes": null,
+    "chapters": null,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2014-04-10",
+    "endDate": "2014-04-10",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": null,
+    "popularity": 211,
+    "favourites": 6,
+    "genres": [
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#d6a16b",
+    "cover": "/media/covers/steins-gate-senkei-kousoku-no-mosaicism-123282-66da7598.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/123282",
+    "relations": [
+      {
+        "id": 47517,
+        "relationType": "PARENT"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 85137,
+    "malId": 59669,
+    "slug": "steins-gate-eigou-kaiki-no-pandora-85137",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "CANCELLED",
+    "title": {
+      "romaji": "Steins;Gate: Eigou Kaiki no Pandora",
+      "english": null,
+      "native": "STEINS;GATE 永劫回帰のパンドラ",
+      "display": "Steins;Gate: Eigou Kaiki no Pandora"
+    },
+    "synonyms": [
+      "Steins,Gate: Pandora of Eternal Return"
+    ],
+    "description": "The second part of the Steins;Gate Epigraph Trilogy, a continuation of Heiji Kyokusen no Epigraph.",
+    "episodes": null,
+    "chapters": 10,
+    "volumes": 1,
+    "duration": null,
+    "startDate": "2014-05-23",
+    "endDate": "2015-04-23",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 68,
+    "popularity": 848,
+    "favourites": 9,
+    "genres": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "source": "ORIGINAL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": null,
+    "cover": "/media/covers/steins-gate-eigou-kaiki-no-pandora-85137-44bf928b.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/85137",
+    "relations": [
+      {
+        "id": 79381,
+        "relationType": "PREQUEL"
+      },
+      {
+        "id": 47517,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 102247,
+    "malId": 107548,
+    "slug": "steins-gate-0-102247",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Steins;Gate 0",
+      "english": "Steins;Gate 0",
+      "native": "シュタインズ・ゲート・ゼロ",
+      "display": "Steins;Gate 0"
+    },
+    "synonyms": [
+      "Врата;Штейна 0"
+    ],
+    "description": "An alternate ending to Steins;Gate that leads with the eccentric mad scientist Okabe, struggling to recover from a failed attempt at rescuing Kurisu. He decides to give up and abandons his lively scientist alter ego, in pursuit to forget the past. When all seems to be normal, he is seemingly pulled back into the past by meeting an acquaintance of Kurisu, who tells him that they have begun testing a device that stores the memory of a human and creates a simulation of them with their characteristics and personalities. Okabe begins testing and finds out that the simulation of Kurisu has brought back anguish and some new unexpected tragedies...\n\nIncludes chapter 0.",
+    "episodes": null,
+    "chapters": 41,
+    "volumes": 6,
+    "duration": null,
+    "startDate": "2017-08-04",
+    "endDate": "2020-02-04",
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 76,
+    "popularity": 1999,
+    "favourites": 74,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "source": "VISUAL_NOVEL",
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#e43528",
+    "cover": "/media/covers/steins-gate-0-102247-7d06b9bc.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/102247",
+    "relations": [
+      {
+        "id": 47517,
+        "relationType": "PREQUEL"
+      },
+      {
+        "id": 91995,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 21127,
+        "relationType": "ALTERNATIVE"
+      },
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  },
+  {
+    "id": 89627,
+    "malId": 62951,
+    "slug": "gekijouban-steins-gate-fuka-ryouiki-no-deja-vu-89627",
+    "type": "MANGA",
+    "format": "MANGA",
+    "status": "FINISHED",
+    "title": {
+      "romaji": "Gekijouban Steins;Gate: Fuka Ryouiki no Déjà vu",
+      "english": null,
+      "native": "劇場版 STEINS；GATE 負荷領域のデジャヴ",
+      "display": "Gekijouban Steins;Gate: Fuka Ryouiki no Déjà vu"
+    },
+    "synonyms": [
+      "Steins,Gate: Loading Area of Déjà vu"
+    ],
+    "description": "The manga adapts the anime film that revolves around Kurisu Makise as she tries to save Okabe Rintarou from his uncontrolled leaps in time. Kurisu must decide if she will save him as his lover, or not bring him back to the main timeline with her morals as a scientist.\n\n(Source: Anime News Network)",
+    "episodes": null,
+    "chapters": 9,
+    "volumes": 2,
+    "duration": null,
+    "startDate": null,
+    "endDate": null,
+    "season": null,
+    "seasonYear": null,
+    "averageScore": 61,
+    "popularity": 509,
+    "favourites": 1,
+    "genres": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "source": null,
+    "studios": [],
+    "trailer": null,
+    "accentColor": "#e45086",
+    "cover": "/media/covers/gekijouban-steins-gate-fuka-ryouiki-no-deja-vu-89627-af3a3a4b.jpg",
+    "banner": null,
+    "siteUrl": "https://anilist.co/manga/89627",
+    "relations": [
+      {
+        "id": 91997,
+        "relationType": "CHARACTER"
+      }
+    ]
+  }
+]

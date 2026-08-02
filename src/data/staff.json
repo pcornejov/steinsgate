@@ -1,0 +1,551 @@
+[
+  {
+    "id": 99960,
+    "name": "Nitro Plus",
+    "native": "ニトロプラス",
+    "roles": [
+      "Original Creator"
+    ],
+    "occupations": [],
+    "image": "/media/staff/nitro-plus-99960-00feff41.png",
+    "siteUrl": "https://anilist.co/staff/99960",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 109749,
+    "name": "MAGES.",
+    "native": "株式会社MAGES.",
+    "roles": [
+      "Original Creator"
+    ],
+    "occupations": [],
+    "image": "/media/staff/mages-109749-6455285d.jpg",
+    "siteUrl": "https://anilist.co/staff/109749",
+    "worksOn": [
+      9253,
+      21127
+    ]
+  },
+  {
+    "id": 105145,
+    "name": "huke",
+    "native": null,
+    "roles": [
+      "Original Character Design"
+    ],
+    "occupations": [
+      "Illustrator"
+    ],
+    "image": "/media/staff/huke-105145-c00c20a7.png",
+    "siteUrl": "https://anilist.co/staff/105145",
+    "worksOn": [
+      9253,
+      21127
+    ]
+  },
+  {
+    "id": 104572,
+    "name": "Takuya Satou",
+    "native": "佐藤卓哉",
+    "roles": [
+      "Director"
+    ],
+    "occupations": [
+      "Director",
+      "Storyboard Artist",
+      "Scriptwriter"
+    ],
+    "image": "/media/staff/takuya-satou-104572-e11b50d4.png",
+    "siteUrl": "https://anilist.co/staff/104572",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 101369,
+    "name": "Hiroshi Hamasaki",
+    "native": "浜崎博嗣",
+    "roles": [
+      "Director"
+    ],
+    "occupations": [
+      "Director",
+      "Storyboard Artist"
+    ],
+    "image": "/media/staff/hiroshi-hamasaki-101369-5215c8a7.png",
+    "siteUrl": "https://anilist.co/staff/101369",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 109703,
+    "name": "Tomoki Kobayashi",
+    "native": "小林智樹",
+    "roles": [
+      "Director"
+    ],
+    "occupations": [],
+    "image": "/media/staff/tomoki-kobayashi-109703-f012866a.png",
+    "siteUrl": "https://anilist.co/staff/109703",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 114313,
+    "name": "Chiyomaru Shikura",
+    "native": "志倉千代丸",
+    "roles": [
+      "Supervisor",
+      "Original Creator"
+    ],
+    "occupations": [
+      "Musician",
+      "Producer"
+    ],
+    "image": "/media/staff/chiyomaru-shikura-114313-99852152.png",
+    "siteUrl": "https://anilist.co/staff/114313",
+    "worksOn": [
+      9253,
+      21127
+    ]
+  },
+  {
+    "id": 142688,
+    "name": "Digitarou",
+    "native": "でじたろう",
+    "roles": [
+      "Supervisor"
+    ],
+    "occupations": [
+      "Producer"
+    ],
+    "image": "/media/staff/digitarou-142688-bed0545a.png",
+    "siteUrl": "https://anilist.co/staff/142688",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 107198,
+    "name": "Jukki Hanada",
+    "native": "花田十輝",
+    "roles": [
+      "Series Composition"
+    ],
+    "occupations": [
+      "Scriptwriter"
+    ],
+    "image": "/media/staff/jukki-hanada-107198-5ab73740.png",
+    "siteUrl": "https://anilist.co/staff/107198",
+    "worksOn": [
+      9253,
+      21127
+    ]
+  },
+  {
+    "id": 106111,
+    "name": "Kyuuta Sakai",
+    "native": "坂井久太",
+    "roles": [
+      "Character Design"
+    ],
+    "occupations": [
+      "Animator",
+      "Designer"
+    ],
+    "image": "/media/staff/kyuuta-sakai-106111-bf61ed14.png",
+    "siteUrl": "https://anilist.co/staff/106111",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 142690,
+    "name": "Shigeyuki Koresawa",
+    "native": "コレサワシゲユキ",
+    "roles": [
+      "Prop Design"
+    ],
+    "occupations": [
+      "Designer",
+      "CG Artist"
+    ],
+    "image": "/media/staff/shigeyuki-koresawa-142690-186652ce.png",
+    "siteUrl": "https://anilist.co/staff/142690",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 110229,
+    "name": "Kazuhisa Nakamura",
+    "native": "中村和久",
+    "roles": [
+      "Prop Design"
+    ],
+    "occupations": [
+      "Animator"
+    ],
+    "image": "/media/staff/kazuhisa-nakamura-110229-949876dd.jpg",
+    "siteUrl": "https://anilist.co/staff/110229",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 146498,
+    "name": "Tom",
+    "native": "灯夢",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [
+      "Designer"
+    ],
+    "image": "/media/staff/tom-146498-337bb6d0.jpg",
+    "siteUrl": "https://anilist.co/staff/146498",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 159298,
+    "name": "Isao Ishikawa",
+    "native": "石川功",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [
+      "Producer"
+    ],
+    "image": "/media/staff/isao-ishikawa-159298-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/159298",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 190774,
+    "name": "Michiko Koyanagi",
+    "native": "小柳路子",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [],
+    "image": "/media/staff/michiko-koyanagi-190774-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/190774",
+    "worksOn": [
+      9253,
+      21127
+    ]
+  },
+  {
+    "id": 200105,
+    "name": "Daisuke Kobayashi",
+    "native": "小林大介",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [
+      "Producer"
+    ],
+    "image": "/media/staff/daisuke-kobayashi-200105-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/200105",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 231770,
+    "name": "Yasuo Tsubakimoto",
+    "native": "椿本康雄",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [],
+    "image": "/media/staff/yasuo-tsubakimoto-231770-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/231770",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 142692,
+    "name": "Kouji Etou",
+    "native": "衛藤功二",
+    "roles": [
+      "Art Director"
+    ],
+    "occupations": [
+      "Background Artist"
+    ],
+    "image": "/media/staff/kouji-etou-142692-c9e94c42.png",
+    "siteUrl": "https://anilist.co/staff/142692",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 142697,
+    "name": "Kazushige Kanehira",
+    "native": "金平和茂",
+    "roles": [
+      "Art Design"
+    ],
+    "occupations": [
+      "Designer"
+    ],
+    "image": "/media/staff/kazushige-kanehira-142697-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/142697",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 142685,
+    "name": "Miyuki Satou",
+    "native": "佐藤美由紀",
+    "roles": [
+      "Color Design"
+    ],
+    "occupations": [
+      "Painter"
+    ],
+    "image": "/media/staff/miyuki-satou-142685-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/142685",
+    "worksOn": [
+      9253
+    ]
+  },
+  {
+    "id": 118442,
+    "name": "Kenichi Kawamura",
+    "native": "川村賢一",
+    "roles": [
+      "Director"
+    ],
+    "occupations": [
+      "Director",
+      "Storyboard Artist"
+    ],
+    "image": "/media/staff/kenichi-kawamura-118442-fb63103f.jpg",
+    "siteUrl": "https://anilist.co/staff/118442",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 118484,
+    "name": "Tomoshige Inayoshi",
+    "native": "稲吉智重",
+    "roles": [
+      "Character Design"
+    ],
+    "occupations": [
+      "Animator"
+    ],
+    "image": "/media/staff/tomoshige-inayoshi-118484-241743b8.jpg",
+    "siteUrl": "https://anilist.co/staff/118484",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 118485,
+    "name": "Asako Inayoshi",
+    "native": "稲吉朝子",
+    "roles": [
+      "Prop Design"
+    ],
+    "occupations": [
+      "Animator"
+    ],
+    "image": "/media/staff/asako-inayoshi-118485-c130b514.jpg",
+    "siteUrl": "https://anilist.co/staff/118485",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 186086,
+    "name": "Fumihiro Kitahara",
+    "native": "北原史尋",
+    "roles": [
+      "Title Logo Design"
+    ],
+    "occupations": [],
+    "image": "/media/staff/fumihiro-kitahara-186086-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/186086",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 132891,
+    "name": "Takayuki Yamaguchi",
+    "native": "山口貴之",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [
+      "Audio Engineer"
+    ],
+    "image": "/media/staff/takayuki-yamaguchi-132891-c582a31c.png",
+    "siteUrl": "https://anilist.co/staff/132891",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 232397,
+    "name": "Asako Suzuki",
+    "native": "鈴木朝子",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [],
+    "image": "/media/staff/asako-suzuki-232397-1bb983a4.jpg",
+    "siteUrl": "https://anilist.co/staff/232397",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 232398,
+    "name": "Rie Sakuma",
+    "native": "佐久間里江",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [],
+    "image": "/media/staff/rie-sakuma-232398-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/232398",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 232402,
+    "name": "Kaito Suzuki",
+    "native": "鈴木海斗",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [],
+    "image": "/media/staff/kaito-suzuki-232402-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/232402",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 232403,
+    "name": "Yukihiro Matsuo",
+    "native": "松尾ゆきひろ",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [],
+    "image": "/media/staff/yukihiro-matsuo-232403-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/232403",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 232405,
+    "name": "Tomohiro Ootani",
+    "native": "大谷知広",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [],
+    "image": "/media/staff/tomohiro-ootani-232405-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/232405",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 143352,
+    "name": "Kazuhiko Hasegawa",
+    "native": "長谷川和彦",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [
+      "Producer"
+    ],
+    "image": "/media/staff/kazuhiko-hasegawa-143352-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/143352",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 150069,
+    "name": "Makoto Itou",
+    "native": "伊藤誠",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [
+      "Producer"
+    ],
+    "image": "/media/staff/makoto-itou-150069-1b044590.png",
+    "siteUrl": "https://anilist.co/staff/150069",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 155236,
+    "name": "Hiroshi Takano",
+    "native": "鷹野浩士",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [
+      "Producer"
+    ],
+    "image": "/media/staff/hiroshi-takano-155236-c177c9fa.jpg",
+    "siteUrl": "https://anilist.co/staff/155236",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 155858,
+    "name": "Junichirou Tamura",
+    "native": "田村淳一郎",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [],
+    "image": "/media/staff/junichirou-tamura-155858-830861c7.png",
+    "siteUrl": "https://anilist.co/staff/155858",
+    "worksOn": [
+      21127
+    ]
+  },
+  {
+    "id": 156748,
+    "name": "Yoshinori Hasegawa",
+    "native": "長谷川嘉範",
+    "roles": [
+      "Assistance"
+    ],
+    "occupations": [
+      "Producer"
+    ],
+    "image": "/media/staff/yoshinori-hasegawa-156748-f039952d.jpg",
+    "siteUrl": "https://anilist.co/staff/156748",
+    "worksOn": [
+      21127
+    ]
+  }
+]
