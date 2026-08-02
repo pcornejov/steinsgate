@@ -1,0 +1,42 @@
+---
+import CharacterCard from '../../components/CharacterCard.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import Base from '../../layouts/Base.astro';
+import { characters, meta } from '../../lib/data';
+
+const main = characters.filter((c) => c.role === 'MAIN');
+const supporting = characters.filter((c) => c.role !== 'MAIN');
+---
+
+<Base
+  title="Personajes"
+  description={`Los ${meta.counts.characters} personajes de Steins;Gate: fichas con datos, seiyuu y perfiles escritos en español.`}
+>
+  <PageHeader
+    eyebrow={`${meta.counts.characters} fichas`}
+    title="Personajes"
+    lead="Miembros del laboratorio, agentes, investigadores y vecinos de Akihabara. Cada ficha combina los datos objetivos de AniList —edad, cumpleaños, seiyuu— con un perfil escrito para esta enciclopedia."
+  />
+
+  <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
+    <section>
+      <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1 border-b border-line/60 pb-3">
+        <h2 class="font-display text-2xl font-bold text-ink">Reparto principal</h2>
+        <span class="font-mono text-xs text-ink-mute">{main.length} personajes</span>
+      </div>
+      <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        {main.map((character) => <CharacterCard character={character} />)}
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1 border-b border-line/60 pb-3">
+        <h2 class="font-display text-2xl font-bold text-ink">Secundarios</h2>
+        <span class="font-mono text-xs text-ink-mute">{supporting.length} personajes</span>
+      </div>
+      <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        {supporting.map((character) => <CharacterCard character={character} />)}
+      </div>
+    </section>
+  </div>
+</Base>

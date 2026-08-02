@@ -1,0 +1,132 @@
+---
+import PageHeader from '../components/PageHeader.astro';
+import Base from '../layouts/Base.astro';
+import { formatDate, meta } from '../lib/data';
+
+const generated = meta.generatedAt.slice(0, 10);
+---
+
+<Base
+  title="Créditos y método"
+  description="De dónde salen los datos de esta enciclopedia, cómo se construye el sitio y qué contenido es original."
+>
+  <PageHeader
+    eyebrow="Transparencia"
+    title="Créditos y método"
+    lead="Qué parte de este sitio viene de APIs públicas, qué parte está escrita para el proyecto y cómo se genera todo."
+  />
+
+  <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+    <section>
+      <h2 class="font-display text-2xl font-bold text-ink">Fuentes de datos</h2>
+      <p class="mt-3 text-[15px] leading-relaxed text-ink-soft">
+        Los datos objetivos y las imágenes provienen de dos APIs públicas que no requieren
+        clave. La sincronización se ejecuta como paso previo al build, y el resultado se
+        guarda en el repositorio: el sitio publicado no hace ninguna petición a estas APIs.
+      </p>
+
+      <div class="mt-6 space-y-4">
+        {
+          meta.sources.map((source) => (
+            <div class="lab-panel p-5">
+              <h3 class="font-display text-lg font-semibold text-ink">{source.name}</h3>
+              <p class="mt-1 font-mono text-[11px] break-all text-ink-mute">{source.api}</p>
+              <p class="mt-3 text-[14px] leading-relaxed text-ink-soft">
+                {source.name === 'AniList'
+                  ? 'Catálogo de obras, fichas de personajes con sus seiyuu, equipo de producción, portadas y banners.'
+                  : 'Guía de episodios: número, título, fecha de emisión, duración, sinopsis y fotograma.'}
+              </p>
+              <a
+                href={source.url}
+                rel="noopener noreferrer external"
+                target="_blank"
+                class="mt-3 inline-block font-mono text-[12px] text-gel transition-colors hover:text-ink"
+              >
+                {source.url} →
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="font-display text-2xl font-bold text-ink">Contenido original</h2>
+      <p class="mt-3 text-[15px] leading-relaxed text-ink-soft">
+        Las APIs aportan hechos, no prosa en español. Todo el texto enciclopédico de este
+        sitio está escrito para el proyecto: el glosario, las páginas de líneas de mundo,
+        los perfiles de personaje y los textos de sección.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-ink-soft">
+        Donde se reproduce material de la fuente sin traducir —la sinopsis de AniList, las
+        descripciones de personaje en inglés, las sinopsis de episodio de Kitsu— aparece
+        etiquetado como tal y oculto tras un aviso de spoiler.
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="font-display text-2xl font-bold text-ink">Cómo está hecho</h2>
+      <ul class="mt-4 space-y-3 text-[15px] leading-relaxed text-ink-soft">
+        <li class="flex gap-3">
+          <span class="mt-2 h-1 w-1 shrink-0 bg-nixie" aria-hidden="true"></span>
+          <span>
+            <strong class="text-ink">Astro</strong> en modo estático: cada página se genera
+            en el build y se sirve como HTML plano.
+          </span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-1 w-1 shrink-0 bg-nixie" aria-hidden="true"></span>
+          <span>
+            <strong class="text-ink">Sin JavaScript</strong> salvo en el buscador, que filtra
+            un índice embebido en la propia página. Nada se envía a ningún servidor.
+          </span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-1 w-1 shrink-0 bg-nixie" aria-hidden="true"></span>
+          <span>
+            <strong class="text-ink">Imágenes y fuentes locales</strong>: se descargan durante
+            el build, así que la página no depende de CDNs de terceros ni los expone a rastreo.
+          </span>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-2 h-1 w-1 shrink-0 bg-nixie" aria-hidden="true"></span>
+          <span>
+            <strong class="text-ink">Despliegue</strong> automático en GitHub Pages mediante
+            GitHub Actions en cada push a <code class="font-mono text-[13px] text-gel">main</code>.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="font-display text-2xl font-bold text-ink">Estado del archivo</h2>
+      <dl class="mt-4 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3">
+        {
+          [
+            ['Última sincronización', formatDate(generated)],
+            ['Obras', String(meta.counts.media)],
+            ['Personajes', String(meta.counts.characters)],
+            ['Episodios', String(meta.counts.episodes)],
+            ['Equipo', String(meta.counts.staff)],
+            ['Estado', meta.degraded ? 'Parcial' : 'Completo'],
+          ].map(([term, value]) => (
+            <div class="border-t border-line/60 pt-3">
+              <dt class="font-mono text-[10px] tracking-[0.16em] text-ink-mute uppercase">{term}</dt>
+              <dd class="mt-1 font-display text-lg font-semibold text-ink">{value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </section>
+
+    <section class="mt-12 border-t border-line/60 pt-8">
+      <h2 class="font-display text-lg font-bold text-ink">Aviso legal</h2>
+      <p class="mt-3 text-[14px] leading-relaxed text-ink-soft">
+        Proyecto de fans sin ánimo de lucro y sin relación con los titulares de los derechos.
+        <em> Steins;Gate</em> es propiedad de 5pb. y Nitroplus. Las imágenes se reproducen con
+        fines informativos y pertenecen a sus respectivos autores. Los textos originales de
+        este sitio pueden reutilizarse citando la fuente.
+      </p>
+    </section>
+  </div>
+</Base>

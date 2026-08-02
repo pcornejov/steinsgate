@@ -204,3 +204,13 @@ export function truncate(text: string | null, max: number): string {
   if (flat.length <= max) return flat;
   return `${flat.slice(0, flat.lastIndexOf(' ', max))}…`;
 }
+
+/**
+ * Recorta para usar como meta description. Devuelve '' si el resultado seria
+ * demasiado corto para ser util en buscadores, de modo que quien lo llame
+ * pueda encadenar un texto propio con `||`.
+ */
+export function metaSummary(text: string | null, max = 155, min = 60): string {
+  const summary = truncate(text, max);
+  return summary.length >= min ? summary : '';
+}

@@ -1,0 +1,185 @@
+---
+import PageHeader from '../components/PageHeader.astro';
+import Base from '../layouts/Base.astro';
+import { glossary } from '../content/glossary';
+import { getProfile } from '../content/profiles';
+import { worldlines } from '../content/worldlines';
+import { anime, characters, label, manga, truncate } from '../lib/data';
+import { url } from '../lib/site';
+
+/**
+ * Índice de búsqueda generado en build. Es pequeño (unos pocos KB), así que
+ * se embebe en la página y el filtrado ocurre en el cliente sin peticiones.
+ */
+type IndexEntry = {
+  t: string; // título
+  s: string; // subtítulo
+  d: string; // descripción
+  u: string; // URL
+  k: string; // categoría
+  i: string | null; // miniatura
+};
+
+const index: IndexEntry[] = [
+  ...[...anime, ...manga].map((item) => ({
+    t: item.title.display,
+    s: [label.format(item.format), item.startDate?.slice(0, 4)].filter(Boolean).join(' · '),
+    d: [item.title.romaji, item.title.native, ...item.synonyms].filter(Boolean).join(' '),
+    u: url(`/obras/${item.slug}`),
+    k: 'Obra',
+    i: item.cover ? url(item.cover) : null,
+  })),
+  ...characters.map((character) => ({
+    t: character.name.full,
+    s: getProfile(character.id)?.tagline ?? (character.role === 'MAIN' ? 'Principal' : 'Secundario'),
+    d: [
+      character.name.native,
+      ...character.name.alternative,
+      getProfile(character.id)?.alias,
+      character.voiceActors[0]?.name,
+    ]
+      .filter(Boolean)
+      .join(' '),
+    u: url(`/personajes/${character.slug}`),
+    k: 'Personaje',
+    i: character.image ? url(character.image) : null,
+  })),
+  ...glossary.map((entry) => ({
+    t: entry.term,
+    s: entry.short,
+    d: [entry.reading, entry.category].filter(Boolean).join(' '),
+    u: url(`/glosario/${entry.slug}`),
+    k: 'Glosario',
+    i: null,
+  })),
+  ...worldlines.map((line) => ({
+    t: line.name,
+    s: truncate(line.summary, 110),
+    d: `${line.divergence} ${line.band} línea de mundo campo atractor`,
+    u: url(`/lineas-de-mundo#${line.slug}`),
+    k: 'Línea de mundo',
+    i: null,
+  })),
+];
+---
+
+<Base
+  title="Buscar"
+  description="Busca en toda la enciclopedia de Steins;Gate: obras, personajes, términos del glosario y líneas de mundo."
+>
+  <PageHeader
+    eyebrow={`${index.length} entradas indexadas`}
+    title="Buscar"
+    lead="Busca a la vez en obras, personajes, glosario y líneas de mundo. El índice va incluido en esta página: funciona sin conexión y sin enviar nada a ningún servidor."
+  >
+    <div class="mt-8 max-w-xl">
+      <label for="q" class="sr-only">Término de búsqueda</label>
+      <input
+        id="q"
+        type="search"
+        autocomplete="off"
+        autofocus
+        placeholder="Okabe, D-Mail, campo atractor…"
+        class="w-full border border-line bg-panel px-4 py-3 font-mono text-[15px] text-ink placeholder:text-ink-mute focus:border-gel/60 focus:outline-none"
+      />
+      <p id="count" class="mt-2 font-mono text-[11px] text-ink-mute" aria-live="polite"></p>
+    </div>
+  </PageHeader>
+
+  <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+    <ul id="results" class="grid gap-3 sm:grid-cols-2"></ul>
+    <p id="empty" class="hidden py-12 text-center text-ink-mute">
+      No hay resultados. Prueba con otro término.
+    </p>
+  </div>
+</Base>
+
+<script type="application/json" id="search-index" is:inline set:html={JSON.stringify(index)} />
+
+<script>
+  type IndexEntry = { t: string; s: string; d: string; u: string; k: string; i: string | null };
+
+  const raw = document.getElementById('search-index')?.textContent ?? '[]';
+  const index: IndexEntry[] = JSON.parse(raw);
+
+  const input = document.getElementById('q') as HTMLInputElement;
+  const results = document.getElementById('results') as HTMLUListElement;
+  const count = document.getElementById('count') as HTMLParagraphElement;
+  const empty = document.getElementById('empty') as HTMLParagraphElement;
+
+  /** Normaliza para que "okabe" encuentre "Okabe" y "linea" encuentre "línea". */
+  const normalize = (value: string) =>
+    value
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
+
+  const haystacks = index.map((entry) => normalize(`${entry.t} ${entry.s} ${entry.d} ${entry.k}`));
+
+  const badgeClass: Record<string, string> = {
+    Obra: 'text-nixie border-nixie/40',
+    Personaje: 'text-gel border-gel/40',
+    Glosario: 'text-plum border-plum/40',
+    'Línea de mundo': 'text-ink-soft border-line',
+  };
+
+  function escape(value: string) {
+    return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function render(matches: IndexEntry[]) {
+    results.innerHTML = matches
+      .slice(0, 60)
+      .map(
+        (entry) => `
+        <li>
+          <a href="${entry.u}" class="group flex items-center gap-3 border border-line bg-panel/60 p-3 transition-colors hover:border-gel/50">
+            ${
+              entry.i
+                ? `<img src="${entry.i}" alt="" width="44" height="60" loading="lazy" class="h-15 w-11 shrink-0 border border-line object-cover object-top" />`
+                : ''
+            }
+            <span class="min-w-0 flex-1">
+              <span class="flex items-center gap-2">
+                <span class="truncate font-display text-[15px] font-semibold text-ink transition-colors group-hover:text-gel">${escape(entry.t)}</span>
+                <span class="shrink-0 border px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-wider ${badgeClass[entry.k] ?? 'text-ink-mute border-line'}">${escape(entry.k)}</span>
+              </span>
+              <span class="mt-1 line-clamp-2 block text-[13px] leading-snug text-ink-soft">${escape(entry.s)}</span>
+            </span>
+          </a>
+        </li>`,
+      )
+      .join('');
+  }
+
+  function search(term: string) {
+    const query = normalize(term.trim());
+
+    if (!query) {
+      render(index.filter((entry) => entry.k === 'Obra' || entry.k === 'Personaje').slice(0, 12));
+      count.textContent = `${index.length} entradas indexadas`;
+      empty.classList.add('hidden');
+      return;
+    }
+
+    // Todos los términos deben aparecer, en cualquier orden y campo.
+    const words = query.split(/\s+/);
+    const matches = index.filter((_, i) => words.every((word) => haystacks[i].includes(word)));
+
+    render(matches);
+    count.textContent = `${matches.length} ${matches.length === 1 ? 'resultado' : 'resultados'}`;
+    empty.classList.toggle('hidden', matches.length > 0);
+  }
+
+  input.addEventListener('input', () => {
+    search(input.value);
+    const params = new URLSearchParams(location.search);
+    input.value ? params.set('q', input.value) : params.delete('q');
+    history.replaceState(null, '', `${location.pathname}${params.toString() ? `?${params}` : ''}`);
+  });
+
+  // Permite enlazar búsquedas: /buscar?q=okabe
+  const initial = new URLSearchParams(location.search).get('q') ?? '';
+  input.value = initial;
+  search(initial);
+</script>

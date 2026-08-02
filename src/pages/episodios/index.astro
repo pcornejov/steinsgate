@@ -1,0 +1,63 @@
+---
+import PageHeader from '../../components/PageHeader.astro';
+import Base from '../../layouts/Base.astro';
+import { formatDate, getEpisodes, label, mediaWithEpisodes, meta } from '../../lib/data';
+import { url } from '../../lib/site';
+---
+
+<Base
+  title="Episodios"
+  description={`Guía de los ${meta.counts.episodes} episodios de Steins;Gate con sinopsis, fecha de emisión y duración.`}
+>
+  <PageHeader
+    eyebrow={`${meta.counts.episodes} episodios`}
+    title="Guía de episodios"
+    lead="Sinopsis, fechas de emisión y duración de cada episodio, con los datos de Kitsu. Las sinopsis describen lo que ocurre en el episodio: se muestran ocultas por defecto."
+  />
+
+  <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        mediaWithEpisodes.map((item) => {
+          const episodes = getEpisodes(item.id);
+          return (
+            <a
+              href={url(`/episodios/${item.slug}`)}
+              class="group lab-panel flex flex-col overflow-hidden transition-colors hover:border-nixie/50"
+            >
+              {item.banner && (
+                <div class="relative aspect-[16/6] overflow-hidden bg-abyss">
+                  <img
+                    src={url(item.banner)}
+                    alt=""
+                    width="600"
+                    height="225"
+                    loading="lazy"
+                    class="h-full w-full object-cover opacity-70 transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-panel to-transparent" />
+                </div>
+              )}
+              <div class="flex flex-1 flex-col p-5">
+                <p class="font-mono text-[11px] tracking-wide text-ink-mute uppercase">
+                  {label.format(item.format)}
+                  {item.startDate ? ` · ${item.startDate.slice(0, 4)}` : ''}
+                </p>
+                <h2 class="mt-1.5 font-display text-xl font-bold text-ink transition-colors group-hover:text-nixie">
+                  {item.title.display}
+                </h2>
+                <p class="mt-3 text-sm text-ink-soft">
+                  {episodes.length} {episodes.length === 1 ? 'episodio' : 'episodios'}
+                  {episodes[0]?.airdate ? ` · desde ${formatDate(episodes[0].airdate)}` : ''}
+                </p>
+                <span class="mt-auto pt-4 font-display text-[13px] font-bold tracking-wide text-gel uppercase">
+                  Ver guía →
+                </span>
+              </div>
+            </a>
+          );
+        })
+      }
+    </div>
+  </div>
+</Base>

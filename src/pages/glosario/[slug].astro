@@ -1,0 +1,120 @@
+---
+import type { GetStaticPaths } from 'astro';
+
+import Prose from '../../components/Prose.astro';
+import Spoiler from '../../components/Spoiler.astro';
+import Base from '../../layouts/Base.astro';
+import { getGlossaryEntry, glossary, glossaryByCategory } from '../../content/glossary';
+import { characters } from '../../lib/data';
+import { url } from '../../lib/site';
+
+export const getStaticPaths = (() =>
+  glossary.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }))) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+
+// Los `related` apuntan a otras entradas del glosario o a personajes por nombre corto.
+const characterAliases: Record<string, string> = {
+  okabe: 'Rintarou Okabe',
+  kurisu: 'Kurisu Makise',
+  mayuri: 'Mayuri Shiina',
+  suzuha: 'Suzuha Amane',
+  maho: 'Maho Hiyajou',
+  moeka: 'Moeka Kiryuu',
+};
+
+const relatedTerms = (entry.related ?? [])
+  .map((slug) => getGlossaryEntry(slug))
+  .filter((value): value is NonNullable<typeof value> => Boolean(value));
+
+const relatedCharacters = (entry.related ?? [])
+  .map((slug) => characterAliases[slug])
+  .filter(Boolean)
+  .map((name) => characters.find((c) => c.name.full === name))
+  .filter((value): value is NonNullable<typeof value> => Boolean(value));
+---
+
+<Base title={entry.term} description={entry.short}>
+  <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+    <nav aria-label="Ruta" class="font-mono text-[11px] tracking-wide text-ink-mute">
+      <a href={url('/glosario')} class="transition-colors hover:text-gel">Glosario</a>
+      <span class="mx-1.5" aria-hidden="true">/</span>
+      <a href={url(`/glosario#${entry.category}`)} class="transition-colors hover:text-gel">
+        {glossaryByCategory[entry.category]}
+      </a>
+    </nav>
+
+    <header class="mt-6">
+      <h1 class="font-display text-4xl leading-tight font-bold text-ink sm:text-5xl">
+        {entry.term}
+      </h1>
+      {entry.reading && <p class="mt-2 font-mono text-sm text-ink-mute">{entry.reading}</p>}
+      <p class="mt-5 border-l-2 border-nixie/60 pl-4 text-lg leading-relaxed text-ink">
+        {entry.short}
+      </p>
+    </header>
+
+    <div class="mt-9">
+      {
+        entry.spoiler ? (
+          <Spoiler label="Esta entrada revela acontecimientos del desenlace">
+            <Prose text={entry.body} />
+          </Spoiler>
+        ) : (
+          <Prose text={entry.body} />
+        )
+      }
+    </div>
+
+    {
+      (relatedTerms.length > 0 || relatedCharacters.length > 0) && (
+        <section class="mt-12 border-t border-line/60 pt-8">
+          <h2 class="eyebrow">Véase también</h2>
+
+          {relatedTerms.length > 0 && (
+            <div class="mt-4 grid gap-3 sm:grid-cols-2">
+              {relatedTerms.map((related) => (
+                <a
+                  href={url(`/glosario/${related.slug}`)}
+                  class="group border border-line bg-panel/60 p-4 transition-colors hover:border-gel/50"
+                >
+                  <h3 class="font-display text-base font-semibold text-ink transition-colors group-hover:text-gel">
+                    {related.term}
+                  </h3>
+                  <p class="mt-1.5 text-[13px] leading-snug text-ink-soft">{related.short}</p>
+                </a>
+              ))}
+            </div>
+          )}
+
+          {relatedCharacters.length > 0 && (
+            <ul class="mt-3 flex flex-wrap gap-3">
+              {relatedCharacters.map((character) => (
+                <li>
+                  <a
+                    href={url(`/personajes/${character.slug}`)}
+                    class="group flex items-center gap-2.5 border border-line bg-panel/60 py-2 pr-4 pl-2 transition-colors hover:border-gel/50"
+                  >
+                    {character.image && (
+                      <img
+                        src={url(character.image)}
+                        alt=""
+                        width="36"
+                        height="36"
+                        loading="lazy"
+                        class="h-9 w-9 border border-line object-cover object-top"
+                      />
+                    )}
+                    <span class="text-[13px] font-medium text-ink transition-colors group-hover:text-gel">
+                      {character.name.full}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+      )
+    }
+  </div>
+</Base>

@@ -1,0 +1,88 @@
+---
+import DivergenceMeter from '../components/DivergenceMeter.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Prose from '../components/Prose.astro';
+import Spoiler from '../components/Spoiler.astro';
+import { worldlines } from '../content/worldlines';
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/site';
+---
+
+<Base
+  title="Líneas de mundo"
+  description="Los campos atractores de Steins;Gate: Alpha, Beta y Steins Gate, y por qué el destino sólo cambia superando el 1 % de divergencia."
+>
+  <PageHeader
+    eyebrow="Estructura del universo"
+    title="Líneas de mundo"
+    lead="Una línea de mundo es una historia posible del universo. No se ramifican al azar: se agrupan en campos atractores que convergen en el mismo desenlace, y por eso cambiar el pasado resulta tan fácil como cambiar el destino resulta imposible."
+  />
+
+  <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
+    {/* ─────────────  Cómo se lee el medidor  ───────────── */}
+    <section class="lab-panel flex flex-col items-start gap-8 p-6 sm:p-8 lg:flex-row lg:items-center lg:gap-12">
+      <DivergenceMeter value="1.048596" label="Lectura de referencia" />
+      <div class="min-w-0">
+        <h2 class="font-display text-xl font-bold text-ink">Cómo se lee la divergencia</h2>
+        <p class="mt-3 text-[15px] leading-relaxed text-ink-soft">
+          El medidor expresa, en tanto por ciento y con seis decimales, la distancia entre
+          la línea de mundo actual y la de referencia. Los decimales se mueven con cada cambio
+          en el pasado; la parte entera sólo cambia al saltar de campo atractor.
+        </p>
+        <p class="mt-3 text-[15px] leading-relaxed text-ink-soft">
+          De ahí el problema central de la obra: enviar un mensaje al pasado es sencillo,
+          pero mientras el número no cruce el umbral del 1 %, el desenlace sigue siendo el mismo.
+        </p>
+      </div>
+    </section>
+
+    {/* ─────────────  Los campos  ───────────── */}
+    <div class="mt-14 space-y-12">
+      {
+        worldlines.map((line) => (
+          <section id={line.slug} class="scroll-mt-24">
+            <div class="flex flex-wrap items-center gap-4 border-b border-line/60 pb-4">
+              <span
+                class="nixie-text grid h-14 w-14 shrink-0 place-items-center border border-nixie/35 bg-nixie/5 font-mono text-2xl font-bold"
+                aria-hidden="true"
+              >
+                {line.band}
+              </span>
+              <div class="min-w-0">
+                <h2 class="font-display text-2xl font-bold text-ink sm:text-3xl">{line.name}</h2>
+                <p class="mt-1 font-mono text-[13px] text-nixie">{line.divergence}</p>
+              </div>
+            </div>
+
+            <p class="mt-5 text-[15px] leading-relaxed text-ink">{line.summary}</p>
+
+            {line.spoiler ? (
+              <Spoiler class="mt-5" label="Desarrollo — contiene spoilers del desenlace">
+                <Prose text={line.detail} />
+              </Spoiler>
+            ) : (
+              <Prose class="mt-5" text={line.detail} />
+            )}
+          </section>
+        ))
+      }
+    </div>
+
+    {/* ─────────────  Nota de lectura  ───────────── */}
+    <aside class="mt-16 border-l-2 border-gel/50 pl-5">
+      <h2 class="font-display text-lg font-bold text-ink">Una nota sobre el orden de lectura</h2>
+      <p class="mt-2 text-[15px] leading-relaxed text-ink-soft">
+        La serie de 2011 se sostiene sola y es el punto de entrada natural. La película y
+        <em> Steins;Gate 0</em> parten de que ya se conoce el desenlace, y verlas antes
+        desactiva buena parte de lo que hacen. El resto del catálogo —OVAs, derivaciones
+        cómicas, manga— es material complementario que puede leerse en cualquier momento.
+      </p>
+      <a
+        href={url('/obras')}
+        class="mt-4 inline-block font-display text-[13px] font-bold tracking-wide text-gel uppercase transition-colors hover:text-ink"
+      >
+        Ver el catálogo completo →
+      </a>
+    </aside>
+  </div>
+</Base>

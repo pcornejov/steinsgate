@@ -13,8 +13,8 @@ import {
   getMedia,
   label,
   media,
+  metaSummary,
   staffOf,
-  truncate,
 } from '../../lib/data';
 import { url } from '../../lib/site';
 
@@ -57,7 +57,9 @@ const facts: [string, string][] = [
 
 <Base
   title={item.title.display}
-  description={truncate(item.description, 155) || `Ficha de ${item.title.display} en la enciclopedia de Steins;Gate.`}
+  description={metaSummary(item.description) ||
+    `${item.title.display}: ficha completa en la enciclopedia de Steins;Gate con datos de ` +
+      `producción, reparto y relación con el resto del catálogo.`}
   image={item.banner ?? item.cover}
   bare
 >
@@ -148,7 +150,7 @@ const facts: [string, string][] = [
           <section>
             <h2 class="font-display text-xl font-bold text-ink">Sinopsis</h2>
             <p class="mt-1 font-mono text-[11px] text-ink-mute">
-              Texto original de AniList, traducido no — se reproduce tal cual lo publica la fuente.
+              Reproducida tal y como la publica AniList, en inglés y sin editar.
             </p>
             <Spoiler class="mt-4" label="La sinopsis de la fuente puede adelantar acontecimientos">
               <Prose text={item.description} size="sm" />
