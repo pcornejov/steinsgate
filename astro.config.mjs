@@ -8,7 +8,8 @@ export default defineConfig({
   site: 'https://pcornejov.github.io',
   base: '/steinsgate',
   output: 'static',
-  trailingSlash: 'ignore',
+  // GitHub Pages sirve /ruta/ como forma canonica; declararlo evita un 301 por enlace.
+  trailingSlash: 'always',
   integrations: [sitemap()],
 
   // Las fuentes se descargan y auto-hospedan en build: el sitio publicado no

@@ -13,12 +13,19 @@ const BASE = import.meta.env.BASE_URL;
 
 /**
  * Construye una URL interna respetando el base path de GitHub Pages.
- * `url('/personajes')` → `/steinsgate/personajes`
+ * `url('/personajes')` → `/steinsgate/personajes/`
+ *
+ * Las paginas llevan barra final porque es la forma canonica que sirve GitHub
+ * Pages: sin ella cada enlace interno costaria un 301. Los ficheros con
+ * extension (imagenes, sitemap, favicon) se dejan intactos.
  */
 export function url(pathname = '/'): string {
   const base = BASE.endsWith('/') ? BASE.slice(0, -1) : BASE;
   const suffix = pathname.startsWith('/') ? pathname : `/${pathname}`;
-  return suffix === '/' ? `${base}/` : `${base}${suffix}`;
+  if (suffix === '/') return `${base}/`;
+
+  const isFile = /\.[a-z0-9]{2,5}$/i.test(suffix.split('#')[0].split('?')[0]);
+  return isFile || suffix.endsWith('/') ? `${base}${suffix}` : `${base}${suffix}/`;
 }
 
 /** Igual que `url`, pero para assets ya prefijados con `/media/...`. */

@@ -114,7 +114,34 @@ const index: IndexEntry[] = [
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '');
 
-  const haystacks = index.map((entry) => normalize(`${entry.t} ${entry.s} ${entry.d} ${entry.k}`));
+  // Campos separados para poder puntuar: un acierto en el título vale más que
+  // uno en una descripción que sólo menciona el término de pasada.
+  const fields = index.map((entry) => ({
+    title: normalize(entry.t),
+    sub: normalize(entry.s),
+    rest: normalize(`${entry.d} ${entry.k}`),
+  }));
+
+  const haystacks = fields.map((f) => `${f.title} ${f.sub} ${f.rest}`);
+
+  /** Puntúa una entrada frente a los términos buscados; 0 = no coincide. */
+  function score(i: number, words: string[]): number {
+    const f = fields[i];
+    let total = 0;
+
+    for (const word of words) {
+      if (!haystacks[i].includes(word)) return 0;
+
+      if (f.title === word) total += 100;
+      else if (f.title.startsWith(word)) total += 60;
+      else if (f.title.includes(word)) total += 40;
+      else if (f.sub.includes(word)) total += 10;
+      else total += 3;
+    }
+
+    // A igualdad de relevancia, los títulos cortos son la coincidencia más directa.
+    return total - Math.min(f.title.length, 40) / 100;
+  }
 
   const badgeClass: Record<string, string> = {
     Obra: 'text-nixie border-nixie/40',
@@ -131,8 +158,10 @@ const index: IndexEntry[] = [
     results.innerHTML = matches
       .slice(0, 60)
       .map(
+        // `min-w-0` en el <li>: sin el, el item de grid conserva min-width:auto
+        // y no puede encogerse por debajo de su contenido, desbordando en movil.
         (entry) => `
-        <li>
+        <li class="min-w-0">
           <a href="${entry.u}" class="group flex items-center gap-3 border border-line bg-panel/60 p-3 transition-colors hover:border-gel/50">
             ${
               entry.i
@@ -140,8 +169,8 @@ const index: IndexEntry[] = [
                 : ''
             }
             <span class="min-w-0 flex-1">
-              <span class="flex items-center gap-2">
-                <span class="truncate font-display text-[15px] font-semibold text-ink transition-colors group-hover:text-gel">${escape(entry.t)}</span>
+              <span class="flex min-w-0 items-center gap-2">
+                <span class="min-w-0 truncate font-display text-[15px] font-semibold text-ink transition-colors group-hover:text-gel">${escape(entry.t)}</span>
                 <span class="shrink-0 border px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-wider ${badgeClass[entry.k] ?? 'text-ink-mute border-line'}">${escape(entry.k)}</span>
               </span>
               <span class="mt-1 line-clamp-2 block text-[13px] leading-snug text-ink-soft">${escape(entry.s)}</span>
@@ -162,9 +191,14 @@ const index: IndexEntry[] = [
       return;
     }
 
-    // Todos los términos deben aparecer, en cualquier orden y campo.
+    // Todos los términos deben aparecer, en cualquier orden y campo; el orden
+    // del resultado lo decide la puntuación.
     const words = query.split(/\s+/);
-    const matches = index.filter((_, i) => words.every((word) => haystacks[i].includes(word)));
+    const matches = index
+      .map((entry, i) => ({ entry, points: score(i, words) }))
+      .filter((row) => row.points > 0)
+      .sort((a, b) => b.points - a.points)
+      .map((row) => row.entry);
 
     render(matches);
     count.textContent = `${matches.length} ${matches.length === 1 ? 'resultado' : 'resultados'}`;
