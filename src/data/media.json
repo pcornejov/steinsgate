@@ -28,8 +28,8 @@
     "season": "SPRING",
     "seasonYear": 2011,
     "averageScore": 89,
-    "popularity": 590571,
-    "favourites": 56125,
+    "popularity": 591992,
+    "favourites": 56273,
     "genres": [
       "Drama",
       "Psychological",
@@ -110,8 +110,8 @@
     "season": "WINTER",
     "seasonYear": 2012,
     "averageScore": 81,
-    "popularity": 115332,
-    "favourites": 1066,
+    "popularity": 115549,
+    "favourites": 1070,
     "genres": [
       "Comedy",
       "Romance",
@@ -165,8 +165,8 @@
     "season": "SPRING",
     "seasonYear": 2013,
     "averageScore": 82,
-    "popularity": 139330,
-    "favourites": 2290,
+    "popularity": 139591,
+    "favourites": 2291,
     "genres": [
       "Drama",
       "Romance",
@@ -225,8 +225,8 @@
     "season": "FALL",
     "seasonYear": 2014,
     "averageScore": 72,
-    "popularity": 32444,
-    "favourites": 211,
+    "popularity": 32514,
+    "favourites": 212,
     "genres": [
       "Comedy",
       "Sci-Fi"
@@ -277,8 +277,8 @@
     "season": "FALL",
     "seasonYear": 2015,
     "averageScore": 81,
-    "popularity": 83325,
-    "favourites": 944,
+    "popularity": 83514,
+    "favourites": 945,
     "genres": [
       "Drama",
       "Psychological",
@@ -336,8 +336,8 @@
     "season": "SPRING",
     "seasonYear": 2018,
     "averageScore": 84,
-    "popularity": 221159,
-    "favourites": 8364,
+    "popularity": 221646,
+    "favourites": 8392,
     "genres": [
       "Drama",
       "Psychological",
@@ -400,8 +400,8 @@
     "endDate": "2018-12-21",
     "season": "WINTER",
     "seasonYear": 2019,
-    "averageScore": 71,
-    "popularity": 38239,
+    "averageScore": 72,
+    "popularity": 38349,
     "favourites": 313,
     "genres": [
       "Comedy",
@@ -456,8 +456,8 @@
     "season": null,
     "seasonYear": null,
     "averageScore": 76,
-    "popularity": 7893,
-    "favourites": 254,
+    "popularity": 7901,
+    "favourites": 255,
     "genres": [
       "Drama",
       "Mystery",
@@ -551,7 +551,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": 70,
-    "popularity": 1538,
+    "popularity": 1540,
     "favourites": 19,
     "genres": [
       "Sci-Fi"
@@ -598,7 +598,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": 75,
-    "popularity": 1851,
+    "popularity": 1854,
     "favourites": 32,
     "genres": [
       "Drama",
@@ -646,7 +646,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": null,
-    "popularity": 319,
+    "popularity": 318,
     "favourites": 19,
     "genres": [
       "Drama",
@@ -700,7 +700,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": 79,
-    "popularity": 1639,
+    "popularity": 1642,
     "favourites": 10,
     "genres": [
       "Sci-Fi",
@@ -744,7 +744,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": 63,
-    "popularity": 866,
+    "popularity": 865,
     "favourites": 9,
     "genres": [
       "Adventure",
@@ -797,7 +797,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": 64,
-    "popularity": 553,
+    "popularity": 554,
     "favourites": 10,
     "genres": [
       "Comedy",
@@ -846,7 +846,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": null,
-    "popularity": 346,
+    "popularity": 347,
     "favourites": 3,
     "genres": [
       "Comedy",
@@ -895,7 +895,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": null,
-    "popularity": 339,
+    "popularity": 340,
     "favourites": 4,
     "genres": [
       "Romance",
@@ -1048,7 +1048,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": 65,
-    "popularity": 721,
+    "popularity": 720,
     "favourites": 4,
     "genres": [
       "Comedy",
@@ -1156,7 +1156,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": 60,
-    "popularity": 481,
+    "popularity": 480,
     "favourites": 2,
     "genres": [
       "Comedy",
@@ -1212,7 +1212,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": null,
-    "popularity": 120,
+    "popularity": 121,
     "favourites": 2,
     "genres": [
       "Comedy",
@@ -1273,7 +1273,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": 79,
-    "popularity": 1679,
+    "popularity": 1680,
     "favourites": 52,
     "genres": [
       "Adventure",
@@ -1370,7 +1370,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": null,
-    "popularity": 115,
+    "popularity": 116,
     "favourites": 1,
     "genres": [
       "Comedy",
@@ -1431,7 +1431,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": null,
-    "popularity": 77,
+    "popularity": 79,
     "favourites": 1,
     "genres": [
       "Comedy",
@@ -1591,7 +1591,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": null,
-    "popularity": 208,
+    "popularity": 207,
     "favourites": 6,
     "genres": [
       "Mystery",
@@ -1695,7 +1695,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": 76,
-    "popularity": 2007,
+    "popularity": 2012,
     "favourites": 74,
     "genres": [
       "Drama",
@@ -1754,7 +1754,7 @@
     "season": null,
     "seasonYear": null,
     "averageScore": 61,
-    "popularity": 511,
+    "popularity": 510,
     "favourites": 1,
     "genres": [
       "Drama",
